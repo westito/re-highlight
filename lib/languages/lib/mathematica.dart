@@ -6624,10 +6624,11 @@ const _SYSTEM_SYMBOLS = <String>[
   "\$VoiceStyles",
   "\$WolframDocumentsDirectory",
   "\$WolframID",
-  "\$WolframUUID"
+  "\$WolframUUID",
 ];
 
-ModeCallback callbackOnBegin = (EnhancedMatch match, ModeCallbackResponse response) {
+ModeCallback callbackOnBegin =
+    (EnhancedMatch match, ModeCallbackResponse response) {
   if (!_SYSTEM_SYMBOLS.contains(match[0])) {
     response.ignoreMatch();
   }

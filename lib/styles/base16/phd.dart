@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const phdTheme = {
-  'root':
-      TextStyle(color: Color(0xffb8bbc2), backgroundColor: Color(0xff061229)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff4d5666), color: Color(0xffb8bbc2)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff4d5666), color: Color(0xffb8bbc2)),
+  'root': TextStyle(
+    color: Color(0xffb8bbc2),
+    backgroundColor: Color(0xff061229),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff4d5666),
+    color: Color(0xffb8bbc2),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff4d5666),
+    color: Color(0xffb8bbc2),
+  ),
   'comment': TextStyle(color: Color(0xff717885)),
   'tag': TextStyle(color: Color(0xff9a99a3)),
   'subst': TextStyle(color: Color(0xffb8bbc2)),
@@ -50,7 +56,9 @@ const phdTheme = {
   'keyword': TextStyle(color: Color(0xff9989cc)),
   'emphasis': TextStyle(color: Color(0xff9989cc), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffb08060)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffb08060), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffb08060),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffb08060)),
 };

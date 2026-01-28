@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const dirtyseaTheme = {
-  'root':
-      TextStyle(color: Color(0xff000000), backgroundColor: Color(0xffe0e0e0)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xffd0d0d0), color: Color(0xff000000)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xffd0d0d0), color: Color(0xff000000)),
+  'root': TextStyle(
+    color: Color(0xff000000),
+    backgroundColor: Color(0xffe0e0e0),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xffd0d0d0),
+    color: Color(0xff000000),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xffd0d0d0),
+    color: Color(0xff000000),
+  ),
   'comment': TextStyle(color: Color(0xff707070)),
   'tag': TextStyle(color: Color(0xff202020)),
   'subst': TextStyle(color: Color(0xff000000)),
@@ -50,7 +56,9 @@ const dirtyseaTheme = {
   'keyword': TextStyle(color: Color(0xff000090)),
   'emphasis': TextStyle(color: Color(0xff000090), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xff755B00)),
-  'meta-keyword':
-      TextStyle(color: Color(0xff755B00), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xff755B00),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xff755B00)),
 };

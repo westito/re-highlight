@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const summercampTheme = {
-  'root':
-      TextStyle(color: Color(0xff736e55), backgroundColor: Color(0xff1c1810)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff3a3527), color: Color(0xff736e55)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff3a3527), color: Color(0xff736e55)),
+  'root': TextStyle(
+    color: Color(0xff736e55),
+    backgroundColor: Color(0xff1c1810),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff3a3527),
+    color: Color(0xff736e55),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff3a3527),
+    color: Color(0xff736e55),
+  ),
   'comment': TextStyle(color: Color(0xff504b38)),
   'tag': TextStyle(color: Color(0xff5f5b45)),
   'subst': TextStyle(color: Color(0xff736e55)),
@@ -50,7 +56,9 @@ const summercampTheme = {
   'keyword': TextStyle(color: Color(0xffFF8080)),
   'emphasis': TextStyle(color: Color(0xffFF8080), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffF69BE7)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffF69BE7), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffF69BE7),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffF69BE7)),
 };

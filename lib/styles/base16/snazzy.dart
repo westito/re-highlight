@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const snazzyTheme = {
-  'root':
-      TextStyle(color: Color(0xffe2e4e5), backgroundColor: Color(0xff282a36)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff43454f), color: Color(0xffe2e4e5)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff43454f), color: Color(0xffe2e4e5)),
+  'root': TextStyle(
+    color: Color(0xffe2e4e5),
+    backgroundColor: Color(0xff282a36),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff43454f),
+    color: Color(0xffe2e4e5),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff43454f),
+    color: Color(0xffe2e4e5),
+  ),
   'comment': TextStyle(color: Color(0xff78787e)),
   'tag': TextStyle(color: Color(0xffa5a5a9)),
   'subst': TextStyle(color: Color(0xffe2e4e5)),
@@ -50,7 +56,9 @@ const snazzyTheme = {
   'keyword': TextStyle(color: Color(0xffff6ac1)),
   'emphasis': TextStyle(color: Color(0xffff6ac1), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffb2643c)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffb2643c), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffb2643c),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffb2643c)),
 };

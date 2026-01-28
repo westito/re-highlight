@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const pasqueTheme = {
-  'root':
-      TextStyle(color: Color(0xffDEDCDF), backgroundColor: Color(0xff271C3A)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff3E2D5C), color: Color(0xffDEDCDF)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff3E2D5C), color: Color(0xffDEDCDF)),
+  'root': TextStyle(
+    color: Color(0xffDEDCDF),
+    backgroundColor: Color(0xff271C3A),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff3E2D5C),
+    color: Color(0xffDEDCDF),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff3E2D5C),
+    color: Color(0xffDEDCDF),
+  ),
   'comment': TextStyle(color: Color(0xff5D5766)),
   'tag': TextStyle(color: Color(0xffBEBCBF)),
   'subst': TextStyle(color: Color(0xffDEDCDF)),
@@ -50,7 +56,9 @@ const pasqueTheme = {
   'keyword': TextStyle(color: Color(0xff953B9D)),
   'emphasis': TextStyle(color: Color(0xff953B9D), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xff59325C)),
-  'meta-keyword':
-      TextStyle(color: Color(0xff59325C), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xff59325C),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xff59325C)),
 };

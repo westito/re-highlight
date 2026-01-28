@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const circusTheme = {
-  'root':
-      TextStyle(color: Color(0xffa7a7a7), backgroundColor: Color(0xff191919)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff303030), color: Color(0xffa7a7a7)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff303030), color: Color(0xffa7a7a7)),
+  'root': TextStyle(
+    color: Color(0xffa7a7a7),
+    backgroundColor: Color(0xff191919),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff303030),
+    color: Color(0xffa7a7a7),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff303030),
+    color: Color(0xffa7a7a7),
+  ),
   'comment': TextStyle(color: Color(0xff5f5a60)),
   'tag': TextStyle(color: Color(0xff505050)),
   'subst': TextStyle(color: Color(0xffa7a7a7)),
@@ -50,7 +56,9 @@ const circusTheme = {
   'keyword': TextStyle(color: Color(0xffb888e2)),
   'emphasis': TextStyle(color: Color(0xffb888e2), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffb888e2)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffb888e2), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffb888e2),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffb888e2)),
 };

@@ -3,7 +3,8 @@
 import 'package:re_highlight/re_highlight.dart';
 
 final langPlaintext = Mode(
-    refs: {},
-    name: "Plain text",
-    aliases: ["text", "txt"],
-    disableAutodetect: true);
+  refs: {},
+  name: "Plain text",
+  aliases: ["text", "txt"],
+  disableAutodetect: true,
+);

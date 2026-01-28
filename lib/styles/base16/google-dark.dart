@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const googleDarkTheme = {
-  'root':
-      TextStyle(color: Color(0xffc5c8c6), backgroundColor: Color(0xff1d1f21)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff373b41), color: Color(0xffc5c8c6)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff373b41), color: Color(0xffc5c8c6)),
+  'root': TextStyle(
+    color: Color(0xffc5c8c6),
+    backgroundColor: Color(0xff1d1f21),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff373b41),
+    color: Color(0xffc5c8c6),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff373b41),
+    color: Color(0xffc5c8c6),
+  ),
   'comment': TextStyle(color: Color(0xff969896)),
   'tag': TextStyle(color: Color(0xffb4b7b4)),
   'subst': TextStyle(color: Color(0xffc5c8c6)),
@@ -50,7 +56,9 @@ const googleDarkTheme = {
   'keyword': TextStyle(color: Color(0xffA36AC7)),
   'emphasis': TextStyle(color: Color(0xffA36AC7), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xff3971ED)),
-  'meta-keyword':
-      TextStyle(color: Color(0xff3971ED), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xff3971ED),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xff3971ED)),
 };

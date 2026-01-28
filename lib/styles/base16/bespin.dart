@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const bespinTheme = {
-  'root':
-      TextStyle(color: Color(0xff8a8986), backgroundColor: Color(0xff28211c)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff5e5d5c), color: Color(0xff8a8986)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff5e5d5c), color: Color(0xff8a8986)),
+  'root': TextStyle(
+    color: Color(0xff8a8986),
+    backgroundColor: Color(0xff28211c),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff5e5d5c),
+    color: Color(0xff8a8986),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff5e5d5c),
+    color: Color(0xff8a8986),
+  ),
   'comment': TextStyle(color: Color(0xff666666)),
   'tag': TextStyle(color: Color(0xff797977)),
   'subst': TextStyle(color: Color(0xff8a8986)),
@@ -50,7 +56,9 @@ const bespinTheme = {
   'keyword': TextStyle(color: Color(0xff9b859d)),
   'emphasis': TextStyle(color: Color(0xff9b859d), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xff937121)),
-  'meta-keyword':
-      TextStyle(color: Color(0xff937121), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xff937121),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xff937121)),
 };

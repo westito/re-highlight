@@ -8,21 +8,16 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: MyHomePage(),
-    );
+    return MaterialApp(home: MyHomePage());
   }
 }
 
 class MyHomePage extends StatefulWidget {
-
   @override
   _MyHomePageState createState() => _MyHomePageState();
-
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   String? _language;
   String? _theme;
 
@@ -31,56 +26,55 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Flutter Highlighting by Reqable'),
-      ),
+      appBar: AppBar(title: Text('Flutter Highlighting by Reqable')),
       body: Padding(
         padding: const EdgeInsets.all(10),
         child: Column(
           children: [
             Row(
               children: [
-                SizedBox(
-                  width: 100,
-                  child: Text('Language'),
-                ),
+                SizedBox(width: 100, child: Text('Language')),
                 DropdownButton<String>(
-                  items: builtinAllLanguages.keys.map(
-                    (language) => DropdownMenuItem<String>(
-                      value: language,
-                      child: Text(language)
-                    )
-                  ).toList(),
+                  items: builtinAllLanguages.keys
+                      .map(
+                        (language) => DropdownMenuItem<String>(
+                          value: language,
+                          child: Text(language),
+                        ),
+                      )
+                      .toList(),
                   value: _language,
                   onChanged: (value) {
                     setState(() {
                       _language = value;
-                      _controller.languages = value == null ? const [] : [value];
+                      _controller.languages =
+                          value == null ? const [] : [value];
                     });
-                  }
+                  },
                 ),
               ],
             ),
             Row(
               children: [
-                SizedBox(
-                  width: 100,
-                  child: Text('Theme'),
-                ),
+                SizedBox(width: 100, child: Text('Theme')),
                 DropdownButton<String>(
-                  items: builtinAllThemes.keys.map(
-                    (theme) => DropdownMenuItem<String>(
-                      value: theme,
-                      child: Text(theme)
-                    )
-                  ).toList(),
+                  items: builtinAllThemes.keys
+                      .map(
+                        (theme) => DropdownMenuItem<String>(
+                          value: theme,
+                          child: Text(theme),
+                        ),
+                      )
+                      .toList(),
                   value: _theme,
                   onChanged: (value) {
                     setState(() {
                       _theme = value;
-                      _controller.theme = value == null ? const {} : builtinAllThemes[value] ?? const {};
+                      _controller.theme = value == null
+                          ? const {}
+                          : builtinAllThemes[value] ?? const {};
                     });
-                  }
+                  },
                 ),
               ],
             ),
@@ -92,13 +86,11 @@ class _MyHomePageState extends State<MyHomePage> {
                   expands: true,
                   textAlign: TextAlign.start,
                   textAlignVertical: TextAlignVertical.top,
-                  decoration: InputDecoration(
-                    border: OutlineInputBorder()
-                  )
+                  decoration: InputDecoration(border: OutlineInputBorder()),
                 ),
-              )
-            )
-          ]
+              ),
+            ),
+          ],
         ),
       ),
     );
@@ -106,7 +98,6 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 class CodeThemeController extends TextEditingController {
-
   List<String> languages;
   Map<String, TextStyle> theme;
 
@@ -125,23 +116,23 @@ class CodeThemeController extends TextEditingController {
   TextSpan buildTextSpan({
     required BuildContext context,
     TextStyle? style,
-    required bool withComposing
+    required bool withComposing,
   }) {
     if (languages.isEmpty || theme.isEmpty) {
       return super.buildTextSpan(
         context: context,
         style: style,
-        withComposing: withComposing
+        withComposing: withComposing,
       );
     }
     final HighlightResult result = _highlight.highlightAuto(text, languages);
     final TextSpanRenderer renderer = TextSpanRenderer(style, theme);
     result.render(renderer);
-    return renderer.span ?? super.buildTextSpan(
-      context: context,
-      style: style,
-      withComposing: withComposing
-    );
+    return renderer.span ??
+        super.buildTextSpan(
+          context: context,
+          style: style,
+          withComposing: withComposing,
+        );
   }
-
 }

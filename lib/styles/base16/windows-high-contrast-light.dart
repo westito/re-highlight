@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const windowsHighContrastLightTheme = {
-  'root':
-      TextStyle(color: Color(0xff545454), backgroundColor: Color(0xfffcfcfc)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xffd4d4d4), color: Color(0xff545454)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xffd4d4d4), color: Color(0xff545454)),
+  'root': TextStyle(
+    color: Color(0xff545454),
+    backgroundColor: Color(0xfffcfcfc),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xffd4d4d4),
+    color: Color(0xff545454),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xffd4d4d4),
+    color: Color(0xff545454),
+  ),
   'comment': TextStyle(color: Color(0xffc0c0c0)),
   'tag': TextStyle(color: Color(0xff7e7e7e)),
   'subst': TextStyle(color: Color(0xff545454)),
@@ -50,7 +56,9 @@ const windowsHighContrastLightTheme = {
   'keyword': TextStyle(color: Color(0xff800080)),
   'emphasis': TextStyle(color: Color(0xff800080), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xff54fc54)),
-  'meta-keyword':
-      TextStyle(color: Color(0xff54fc54), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xff54fc54),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xff54fc54)),
 };

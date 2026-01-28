@@ -3,11 +3,15 @@
 import 'package:flutter/painting.dart';
 
 const obsidianTheme = {
-  'root':
-      TextStyle(color: Color(0xffe0e2e4), backgroundColor: Color(0xff282b2e)),
+  'root': TextStyle(
+    color: Color(0xffe0e2e4),
+    backgroundColor: Color(0xff282b2e),
+  ),
   'keyword': TextStyle(color: Color(0xff93c763), fontWeight: FontWeight.bold),
-  'selector-tag':
-      TextStyle(color: Color(0xff93c763), fontWeight: FontWeight.bold),
+  'selector-tag': TextStyle(
+    color: Color(0xff93c763),
+    fontWeight: FontWeight.bold,
+  ),
   'literal': TextStyle(color: Color(0xff93c763), fontWeight: FontWeight.bold),
   'selector-id': TextStyle(color: Color(0xff93c763)),
   'number': TextStyle(color: Color(0xffffcd22)),

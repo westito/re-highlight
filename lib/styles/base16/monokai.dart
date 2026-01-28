@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const monokaiTheme = {
-  'root':
-      TextStyle(color: Color(0xfff8f8f2), backgroundColor: Color(0xff272822)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff49483e), color: Color(0xfff8f8f2)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff49483e), color: Color(0xfff8f8f2)),
+  'root': TextStyle(
+    color: Color(0xfff8f8f2),
+    backgroundColor: Color(0xff272822),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff49483e),
+    color: Color(0xfff8f8f2),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff49483e),
+    color: Color(0xfff8f8f2),
+  ),
   'comment': TextStyle(color: Color(0xff75715e)),
   'tag': TextStyle(color: Color(0xffa59f85)),
   'subst': TextStyle(color: Color(0xfff8f8f2)),
@@ -50,7 +56,9 @@ const monokaiTheme = {
   'keyword': TextStyle(color: Color(0xffae81ff)),
   'emphasis': TextStyle(color: Color(0xffae81ff), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffcc6633)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffcc6633), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffcc6633),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffcc6633)),
 };

@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const atelierSavannaLightTheme = {
-  'root':
-      TextStyle(color: Color(0xff526057), backgroundColor: Color(0xffecf4ee)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff87928a), color: Color(0xff526057)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff87928a), color: Color(0xff526057)),
+  'root': TextStyle(
+    color: Color(0xff526057),
+    backgroundColor: Color(0xffecf4ee),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff87928a),
+    color: Color(0xff526057),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff87928a),
+    color: Color(0xff526057),
+  ),
   'comment': TextStyle(color: Color(0xff78877d)),
   'tag': TextStyle(color: Color(0xff5f6d64)),
   'subst': TextStyle(color: Color(0xff526057)),
@@ -50,7 +56,9 @@ const atelierSavannaLightTheme = {
   'keyword': TextStyle(color: Color(0xff55859b)),
   'emphasis': TextStyle(color: Color(0xff55859b), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xff867469)),
-  'meta-keyword':
-      TextStyle(color: Color(0xff867469), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xff867469),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xff867469)),
 };

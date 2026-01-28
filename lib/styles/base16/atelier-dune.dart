@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const atelierDuneTheme = {
-  'root':
-      TextStyle(color: Color(0xffa6a28c), backgroundColor: Color(0xff20201d)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff6e6b5e), color: Color(0xffa6a28c)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff6e6b5e), color: Color(0xffa6a28c)),
+  'root': TextStyle(
+    color: Color(0xffa6a28c),
+    backgroundColor: Color(0xff20201d),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff6e6b5e),
+    color: Color(0xffa6a28c),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff6e6b5e),
+    color: Color(0xffa6a28c),
+  ),
   'comment': TextStyle(color: Color(0xff7d7a68)),
   'tag': TextStyle(color: Color(0xff999580)),
   'subst': TextStyle(color: Color(0xffa6a28c)),
@@ -50,7 +56,9 @@ const atelierDuneTheme = {
   'keyword': TextStyle(color: Color(0xffb854d4)),
   'emphasis': TextStyle(color: Color(0xffb854d4), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffd43552)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffd43552), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffd43552),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffd43552)),
 };

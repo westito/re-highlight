@@ -33,34 +33,38 @@ int _countMatchGroups(String re) {
 // it also places each individual regular expression into it's own
 // match group, keeping track of the sequencing of those match groups
 // is currently an exercise for the caller. :-)
-String _rewriteBackreferences(List<String> regexps, {
-  required String joinWith
+String _rewriteBackreferences(
+  List<String> regexps, {
+  required String joinWith,
 }) {
   int numCaptures = 0;
-  return regexps.map((regex) {
-    numCaptures += 1;
-    final int offset = numCaptures;
-    String out = '';
-    while (regex.isNotEmpty) {
-      final RegExpMatch? match = RegExp(_backrefRe).firstMatch(regex);
-      if (match == null) {
-        out += regex;
-        break;
-      }
-      final String match0 = match[0]!;
-      final String? match1 = match[1];
-      out += regex.substring(0, match.start);
-      regex = regex.substring(match.start  +match0.length);
-      if (match0[0] == '\\' && match1 != null) {
-        // Adjust the backreference.
-        out += '\\${int.parse(match1) + offset}';
-      } else {
-        out += match0;
-        if (match0 == '(') {
-          numCaptures++;
+  return regexps
+      .map((regex) {
+        numCaptures += 1;
+        final int offset = numCaptures;
+        String out = '';
+        while (regex.isNotEmpty) {
+          final RegExpMatch? match = RegExp(_backrefRe).firstMatch(regex);
+          if (match == null) {
+            out += regex;
+            break;
+          }
+          final String match0 = match[0]!;
+          final String? match1 = match[1];
+          out += regex.substring(0, match.start);
+          regex = regex.substring(match.start + match0.length);
+          if (match0[0] == '\\' && match1 != null) {
+            // Adjust the backreference.
+            out += '\\${int.parse(match1) + offset}';
+          } else {
+            out += match0;
+            if (match0 == '(') {
+              numCaptures++;
+            }
+          }
         }
-      }
-    }
-    return out;
-  }).map((re) => '($re)').join(joinWith);
+        return out;
+      })
+      .map((re) => '($re)')
+      .join(joinWith);
 }

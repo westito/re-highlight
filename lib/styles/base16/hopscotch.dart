@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const hopscotchTheme = {
-  'root':
-      TextStyle(color: Color(0xffb9b5b8), backgroundColor: Color(0xff322931)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff5c545b), color: Color(0xffb9b5b8)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff5c545b), color: Color(0xffb9b5b8)),
+  'root': TextStyle(
+    color: Color(0xffb9b5b8),
+    backgroundColor: Color(0xff322931),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff5c545b),
+    color: Color(0xffb9b5b8),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff5c545b),
+    color: Color(0xffb9b5b8),
+  ),
   'comment': TextStyle(color: Color(0xff797379)),
   'tag': TextStyle(color: Color(0xff989498)),
   'subst': TextStyle(color: Color(0xffb9b5b8)),
@@ -50,7 +56,9 @@ const hopscotchTheme = {
   'keyword': TextStyle(color: Color(0xffc85e7c)),
   'emphasis': TextStyle(color: Color(0xffc85e7c), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffb33508)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffb33508), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffb33508),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffb33508)),
 };

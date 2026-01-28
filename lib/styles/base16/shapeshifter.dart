@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const shapeshifterTheme = {
-  'root':
-      TextStyle(color: Color(0xff102015), backgroundColor: Color(0xfff9f9f9)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xffababab), color: Color(0xff102015)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xffababab), color: Color(0xff102015)),
+  'root': TextStyle(
+    color: Color(0xff102015),
+    backgroundColor: Color(0xfff9f9f9),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xffababab),
+    color: Color(0xff102015),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xffababab),
+    color: Color(0xff102015),
+  ),
   'comment': TextStyle(color: Color(0xff555555)),
   'tag': TextStyle(color: Color(0xff343434)),
   'subst': TextStyle(color: Color(0xff102015)),
@@ -50,7 +56,9 @@ const shapeshifterTheme = {
   'keyword': TextStyle(color: Color(0xfff996e2)),
   'emphasis': TextStyle(color: Color(0xfff996e2), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xff69542d)),
-  'meta-keyword':
-      TextStyle(color: Color(0xff69542d), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xff69542d),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xff69542d)),
 };

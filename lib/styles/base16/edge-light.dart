@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const edgeLightTheme = {
-  'root':
-      TextStyle(color: Color(0xff5e646f), backgroundColor: Color(0xfffafafa)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xffd69822), color: Color(0xff5e646f)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xffd69822), color: Color(0xff5e646f)),
+  'root': TextStyle(
+    color: Color(0xff5e646f),
+    backgroundColor: Color(0xfffafafa),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xffd69822),
+    color: Color(0xff5e646f),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xffd69822),
+    color: Color(0xff5e646f),
+  ),
   'comment': TextStyle(color: Color(0xff5e646f)),
   'tag': TextStyle(color: Color(0xff6587bf)),
   'subst': TextStyle(color: Color(0xff5e646f)),
@@ -50,7 +56,9 @@ const edgeLightTheme = {
   'keyword': TextStyle(color: Color(0xffb870ce)),
   'emphasis': TextStyle(color: Color(0xffb870ce), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xff509c93)),
-  'meta-keyword':
-      TextStyle(color: Color(0xff509c93), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xff509c93),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xff509c93)),
 };

@@ -3,8 +3,10 @@
 import 'package:flutter/painting.dart';
 
 const anOldHopeTheme = {
-  'root':
-      TextStyle(backgroundColor: Color(0xff1C1D21), color: Color(0xffc0c5ce)),
+  'root': TextStyle(
+    backgroundColor: Color(0xff1C1D21),
+    color: Color(0xffc0c5ce),
+  ),
   'comment': TextStyle(color: Color(0xffB6B18B)),
   'quote': TextStyle(color: Color(0xffB6B18B)),
   'variable': TextStyle(color: Color(0xffEB3C54)),

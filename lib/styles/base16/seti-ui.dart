@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const setiUiTheme = {
-  'root':
-      TextStyle(color: Color(0xffd6d6d6), backgroundColor: Color(0xff151718)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff3B758C), color: Color(0xffd6d6d6)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff3B758C), color: Color(0xffd6d6d6)),
+  'root': TextStyle(
+    color: Color(0xffd6d6d6),
+    backgroundColor: Color(0xff151718),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff3B758C),
+    color: Color(0xffd6d6d6),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff3B758C),
+    color: Color(0xffd6d6d6),
+  ),
   'comment': TextStyle(color: Color(0xff41535B)),
   'tag': TextStyle(color: Color(0xff43a5d5)),
   'subst': TextStyle(color: Color(0xffd6d6d6)),
@@ -50,7 +56,9 @@ const setiUiTheme = {
   'keyword': TextStyle(color: Color(0xffa074c4)),
   'emphasis': TextStyle(color: Color(0xffa074c4), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xff8a553f)),
-  'meta-keyword':
-      TextStyle(color: Color(0xff8a553f), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xff8a553f),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xff8a553f)),
 };

@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const darkmossTheme = {
-  'root':
-      TextStyle(color: Color(0xffc7c7a5), backgroundColor: Color(0xff171e1f)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff373c3d), color: Color(0xffc7c7a5)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff373c3d), color: Color(0xffc7c7a5)),
+  'root': TextStyle(
+    color: Color(0xffc7c7a5),
+    backgroundColor: Color(0xff171e1f),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff373c3d),
+    color: Color(0xffc7c7a5),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff373c3d),
+    color: Color(0xffc7c7a5),
+  ),
   'comment': TextStyle(color: Color(0xff555e5f)),
   'tag': TextStyle(color: Color(0xff818f80)),
   'subst': TextStyle(color: Color(0xffc7c7a5)),
@@ -50,7 +56,9 @@ const darkmossTheme = {
   'keyword': TextStyle(color: Color(0xff9bc0c8)),
   'emphasis': TextStyle(color: Color(0xff9bc0c8), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffd27b53)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffd27b53), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffd27b53),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffd27b53)),
 };

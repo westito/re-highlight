@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const porpleTheme = {
-  'root':
-      TextStyle(color: Color(0xffd8d8d8), backgroundColor: Color(0xff292c36)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff474160), color: Color(0xffd8d8d8)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff474160), color: Color(0xffd8d8d8)),
+  'root': TextStyle(
+    color: Color(0xffd8d8d8),
+    backgroundColor: Color(0xff292c36),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff474160),
+    color: Color(0xffd8d8d8),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff474160),
+    color: Color(0xffd8d8d8),
+  ),
   'comment': TextStyle(color: Color(0xff65568a)),
   'tag': TextStyle(color: Color(0xffb8b8b8)),
   'subst': TextStyle(color: Color(0xffd8d8d8)),
@@ -50,7 +56,9 @@ const porpleTheme = {
   'keyword': TextStyle(color: Color(0xffb74989)),
   'emphasis': TextStyle(color: Color(0xffb74989), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xff986841)),
-  'meta-keyword':
-      TextStyle(color: Color(0xff986841), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xff986841),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xff986841)),
 };

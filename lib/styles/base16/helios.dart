@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const heliosTheme = {
-  'root':
-      TextStyle(color: Color(0xffd5d5d5), backgroundColor: Color(0xff1d2021)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff53585b), color: Color(0xffd5d5d5)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff53585b), color: Color(0xffd5d5d5)),
+  'root': TextStyle(
+    color: Color(0xffd5d5d5),
+    backgroundColor: Color(0xff1d2021),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff53585b),
+    color: Color(0xffd5d5d5),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff53585b),
+    color: Color(0xffd5d5d5),
+  ),
   'comment': TextStyle(color: Color(0xff6f7579)),
   'tag': TextStyle(color: Color(0xffcdcdcd)),
   'subst': TextStyle(color: Color(0xffd5d5d5)),
@@ -50,7 +56,9 @@ const heliosTheme = {
   'keyword': TextStyle(color: Color(0xffbe4264)),
   'emphasis': TextStyle(color: Color(0xffbe4264), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffc85e0d)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffc85e0d), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffc85e0d),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffc85e0d)),
 };

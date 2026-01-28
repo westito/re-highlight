@@ -3,8 +3,10 @@
 import 'package:flutter/painting.dart';
 
 const paraisoLightTheme = {
-  'root':
-      TextStyle(backgroundColor: Color(0xffe7e9db), color: Color(0xff4f424c)),
+  'root': TextStyle(
+    backgroundColor: Color(0xffe7e9db),
+    color: Color(0xff4f424c),
+  ),
   'comment': TextStyle(color: Color(0xff776e71)),
   'quote': TextStyle(color: Color(0xff776e71)),
   'variable': TextStyle(color: Color(0xffef6155)),

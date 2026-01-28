@@ -13,16 +13,26 @@ void main() {
     final List<String> languages = highlight.listLanguages();
     languages.where(highlight.autoDetection).forEach((language) {
       test('should be detected as $language', () {
-        final String detectPath = join('vendor', 'highlightjs', 'test', 'detect', language);
+        final String detectPath = join(
+          'vendor',
+          'highlightjs',
+          'test',
+          'detect',
+          language,
+        );
         final Directory dir = Directory(detectPath);
         if (!dir.existsSync()) {
           return;
         }
-        dir.listSync().where((element) =>
-          element.statSync().type == FileSystemEntityType.file
-        ).forEach((path) {
+        dir
+            .listSync()
+            .where(
+              (element) => element.statSync().type == FileSystemEntityType.file,
+            )
+            .forEach((path) {
           final String content = File(path.path).readAsStringSync();
-          final String? detectedLanguage = highlight.highlightAuto(content).language;
+          final String? detectedLanguage =
+              highlight.highlightAuto(content).language;
           expect(detectedLanguage, language);
         });
       });

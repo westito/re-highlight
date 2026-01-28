@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const danqingTheme = {
-  'root':
-      TextStyle(color: Color(0xffe0f0eF), backgroundColor: Color(0xff2d302f)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff5a605d), color: Color(0xffe0f0eF)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff5a605d), color: Color(0xffe0f0eF)),
+  'root': TextStyle(
+    color: Color(0xffe0f0eF),
+    backgroundColor: Color(0xff2d302f),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff5a605d),
+    color: Color(0xffe0f0eF),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff5a605d),
+    color: Color(0xffe0f0eF),
+  ),
   'comment': TextStyle(color: Color(0xff9da8a3)),
   'tag': TextStyle(color: Color(0xffcad8d2)),
   'subst': TextStyle(color: Color(0xffe0f0eF)),
@@ -50,7 +56,9 @@ const danqingTheme = {
   'keyword': TextStyle(color: Color(0xffCCA4E3)),
   'emphasis': TextStyle(color: Color(0xffCCA4E3), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffCA6924)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffCA6924), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffCA6924),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffCA6924)),
 };

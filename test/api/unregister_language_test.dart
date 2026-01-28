@@ -4,11 +4,7 @@ import 'package:re_highlight/re_highlight.dart';
 
 final Mode jQuery = Mode(
   name: "jQuery",
-  contains: [
-    Mode(
-      beginKeywords: "class"
-    )
-  ]
+  contains: [Mode(beginKeywords: "class")],
 );
 
 void main() {

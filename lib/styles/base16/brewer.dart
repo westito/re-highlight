@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const brewerTheme = {
-  'root':
-      TextStyle(color: Color(0xffb7b8b9), backgroundColor: Color(0xff0c0d0e)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff515253), color: Color(0xffb7b8b9)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff515253), color: Color(0xffb7b8b9)),
+  'root': TextStyle(
+    color: Color(0xffb7b8b9),
+    backgroundColor: Color(0xff0c0d0e),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff515253),
+    color: Color(0xffb7b8b9),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff515253),
+    color: Color(0xffb7b8b9),
+  ),
   'comment': TextStyle(color: Color(0xff737475)),
   'tag': TextStyle(color: Color(0xff959697)),
   'subst': TextStyle(color: Color(0xffb7b8b9)),
@@ -50,7 +56,9 @@ const brewerTheme = {
   'keyword': TextStyle(color: Color(0xff756bb1)),
   'emphasis': TextStyle(color: Color(0xff756bb1), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffb15928)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffb15928), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffb15928),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffb15928)),
 };

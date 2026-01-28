@@ -18,5 +18,4 @@ void main() {
       expect(highlight.getLanguage('jquery') != null, true);
     });
   });
-
 }

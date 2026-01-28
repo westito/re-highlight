@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const londonTubeTheme = {
-  'root':
-      TextStyle(color: Color(0xffd9d8d8), backgroundColor: Color(0xff231f20)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff5a5758), color: Color(0xffd9d8d8)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff5a5758), color: Color(0xffd9d8d8)),
+  'root': TextStyle(
+    color: Color(0xffd9d8d8),
+    backgroundColor: Color(0xff231f20),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff5a5758),
+    color: Color(0xffd9d8d8),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff5a5758),
+    color: Color(0xffd9d8d8),
+  ),
   'comment': TextStyle(color: Color(0xff737171)),
   'tag': TextStyle(color: Color(0xff959ca1)),
   'subst': TextStyle(color: Color(0xffd9d8d8)),
@@ -50,7 +56,9 @@ const londonTubeTheme = {
   'keyword': TextStyle(color: Color(0xff98005d)),
   'emphasis': TextStyle(color: Color(0xff98005d), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffb06110)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffb06110), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffb06110),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffb06110)),
 };

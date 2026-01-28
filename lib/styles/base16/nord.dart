@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const nordTheme = {
-  'root':
-      TextStyle(color: Color(0xffE5E9F0), backgroundColor: Color(0xff2E3440)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff434C5E), color: Color(0xffE5E9F0)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff434C5E), color: Color(0xffE5E9F0)),
+  'root': TextStyle(
+    color: Color(0xffE5E9F0),
+    backgroundColor: Color(0xff2E3440),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff434C5E),
+    color: Color(0xffE5E9F0),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff434C5E),
+    color: Color(0xffE5E9F0),
+  ),
   'comment': TextStyle(color: Color(0xff4C566A)),
   'tag': TextStyle(color: Color(0xffD8DEE9)),
   'subst': TextStyle(color: Color(0xffE5E9F0)),
@@ -50,7 +56,9 @@ const nordTheme = {
   'keyword': TextStyle(color: Color(0xffB48EAD)),
   'emphasis': TextStyle(color: Color(0xffB48EAD), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xff5E81AC)),
-  'meta-keyword':
-      TextStyle(color: Color(0xff5E81AC), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xff5E81AC),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xff5E81AC)),
 };

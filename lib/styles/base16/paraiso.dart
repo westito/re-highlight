@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const paraisoTheme = {
-  'root':
-      TextStyle(color: Color(0xffa39e9b), backgroundColor: Color(0xff2f1e2e)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff4f424c), color: Color(0xffa39e9b)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff4f424c), color: Color(0xffa39e9b)),
+  'root': TextStyle(
+    color: Color(0xffa39e9b),
+    backgroundColor: Color(0xff2f1e2e),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff4f424c),
+    color: Color(0xffa39e9b),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff4f424c),
+    color: Color(0xffa39e9b),
+  ),
   'comment': TextStyle(color: Color(0xff776e71)),
   'tag': TextStyle(color: Color(0xff8d8687)),
   'subst': TextStyle(color: Color(0xffa39e9b)),
@@ -50,7 +56,9 @@ const paraisoTheme = {
   'keyword': TextStyle(color: Color(0xff815ba4)),
   'emphasis': TextStyle(color: Color(0xff815ba4), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffe96ba8)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffe96ba8), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffe96ba8),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffe96ba8)),
 };

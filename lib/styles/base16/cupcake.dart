@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const cupcakeTheme = {
-  'root':
-      TextStyle(color: Color(0xff8b8198), backgroundColor: Color(0xfffbf1f2)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xffd8d5dd), color: Color(0xff8b8198)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xffd8d5dd), color: Color(0xff8b8198)),
+  'root': TextStyle(
+    color: Color(0xff8b8198),
+    backgroundColor: Color(0xfffbf1f2),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xffd8d5dd),
+    color: Color(0xff8b8198),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xffd8d5dd),
+    color: Color(0xff8b8198),
+  ),
   'comment': TextStyle(color: Color(0xffbfb9c6)),
   'tag': TextStyle(color: Color(0xffa59daf)),
   'subst': TextStyle(color: Color(0xff8b8198)),
@@ -50,7 +56,9 @@ const cupcakeTheme = {
   'keyword': TextStyle(color: Color(0xffBB99B4)),
   'emphasis': TextStyle(color: Color(0xffBB99B4), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffBAA58C)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffBAA58C), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffBAA58C),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffBAA58C)),
 };

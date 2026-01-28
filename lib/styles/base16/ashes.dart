@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const ashesTheme = {
-  'root':
-      TextStyle(color: Color(0xffC7CCD1), backgroundColor: Color(0xff1C2023)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff565E65), color: Color(0xffC7CCD1)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff565E65), color: Color(0xffC7CCD1)),
+  'root': TextStyle(
+    color: Color(0xffC7CCD1),
+    backgroundColor: Color(0xff1C2023),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff565E65),
+    color: Color(0xffC7CCD1),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff565E65),
+    color: Color(0xffC7CCD1),
+  ),
   'comment': TextStyle(color: Color(0xff747C84)),
   'tag': TextStyle(color: Color(0xffADB3BA)),
   'subst': TextStyle(color: Color(0xffC7CCD1)),
@@ -50,7 +56,9 @@ const ashesTheme = {
   'keyword': TextStyle(color: Color(0xffC795AE)),
   'emphasis': TextStyle(color: Color(0xffC795AE), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffC79595)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffC79595), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffC79595),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffC79595)),
 };

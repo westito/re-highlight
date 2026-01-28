@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const mellowPurpleTheme = {
-  'root':
-      TextStyle(color: Color(0xffffeeff), backgroundColor: Color(0xff1e0528)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff331354), color: Color(0xffffeeff)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff331354), color: Color(0xffffeeff)),
+  'root': TextStyle(
+    color: Color(0xffffeeff),
+    backgroundColor: Color(0xff1e0528),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff331354),
+    color: Color(0xffffeeff),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff331354),
+    color: Color(0xffffeeff),
+  ),
   'comment': TextStyle(color: Color(0xff320f55)),
   'tag': TextStyle(color: Color(0xff873582)),
   'subst': TextStyle(color: Color(0xffffeeff)),
@@ -50,7 +56,9 @@ const mellowPurpleTheme = {
   'keyword': TextStyle(color: Color(0xff8991bb)),
   'emphasis': TextStyle(color: Color(0xff8991bb), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xff4d6fff)),
-  'meta-keyword':
-      TextStyle(color: Color(0xff4d6fff), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xff4d6fff),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xff4d6fff)),
 };

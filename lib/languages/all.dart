@@ -195,10 +195,7 @@ import 'zephir.dart';
 import 'vue.dart';
 import 'gn.dart';
 
-final builtinCommunityLanguages = {
-  'vue': langVue,
-  'gn': langGn,
-};
+final builtinCommunityLanguages = {'vue': langVue, 'gn': langGn};
 final builtinLanguages = {
   '1c': lang1C,
   'abnf': langAbnf,

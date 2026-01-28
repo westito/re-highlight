@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const silkLightTheme = {
-  'root':
-      TextStyle(color: Color(0xff385156), backgroundColor: Color(0xffE9F1EF)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff90B7B6), color: Color(0xff385156)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff90B7B6), color: Color(0xff385156)),
+  'root': TextStyle(
+    color: Color(0xff385156),
+    backgroundColor: Color(0xffE9F1EF),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff90B7B6),
+    color: Color(0xff385156),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff90B7B6),
+    color: Color(0xff385156),
+  ),
   'comment': TextStyle(color: Color(0xff5C787B)),
   'tag': TextStyle(color: Color(0xff4B5B5F)),
   'subst': TextStyle(color: Color(0xff385156)),
@@ -50,7 +56,9 @@ const silkLightTheme = {
   'keyword': TextStyle(color: Color(0xff6E6582)),
   'emphasis': TextStyle(color: Color(0xff6E6582), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xff865369)),
-  'meta-keyword':
-      TextStyle(color: Color(0xff865369), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xff865369),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xff865369)),
 };

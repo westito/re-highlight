@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const atelierDuneLightTheme = {
-  'root':
-      TextStyle(color: Color(0xff6e6b5e), backgroundColor: Color(0xfffefbec)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xffa6a28c), color: Color(0xff6e6b5e)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xffa6a28c), color: Color(0xff6e6b5e)),
+  'root': TextStyle(
+    color: Color(0xff6e6b5e),
+    backgroundColor: Color(0xfffefbec),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xffa6a28c),
+    color: Color(0xff6e6b5e),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xffa6a28c),
+    color: Color(0xff6e6b5e),
+  ),
   'comment': TextStyle(color: Color(0xff999580)),
   'tag': TextStyle(color: Color(0xff7d7a68)),
   'subst': TextStyle(color: Color(0xff6e6b5e)),
@@ -50,7 +56,9 @@ const atelierDuneLightTheme = {
   'keyword': TextStyle(color: Color(0xffb854d4)),
   'emphasis': TextStyle(color: Color(0xffb854d4), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffd43552)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffd43552), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffd43552),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffd43552)),
 };

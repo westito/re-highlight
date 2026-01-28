@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const apathyTheme = {
-  'root':
-      TextStyle(color: Color(0xff81B5AC), backgroundColor: Color(0xff031A16)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff184E45), color: Color(0xff81B5AC)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff184E45), color: Color(0xff81B5AC)),
+  'root': TextStyle(
+    color: Color(0xff81B5AC),
+    backgroundColor: Color(0xff031A16),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff184E45),
+    color: Color(0xff81B5AC),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff184E45),
+    color: Color(0xff81B5AC),
+  ),
   'comment': TextStyle(color: Color(0xff2B685E)),
   'tag': TextStyle(color: Color(0xff5F9C92)),
   'subst': TextStyle(color: Color(0xff81B5AC)),
@@ -50,7 +56,9 @@ const apathyTheme = {
   'keyword': TextStyle(color: Color(0xff4C963E)),
   'emphasis': TextStyle(color: Color(0xff4C963E), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xff3E965B)),
-  'meta-keyword':
-      TextStyle(color: Color(0xff3E965B), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xff3E965B),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xff3E965B)),
 };

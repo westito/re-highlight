@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const papercolorLightTheme = {
-  'root':
-      TextStyle(color: Color(0xff444444), backgroundColor: Color(0xffeeeeee)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff008700), color: Color(0xff444444)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff008700), color: Color(0xff444444)),
+  'root': TextStyle(
+    color: Color(0xff444444),
+    backgroundColor: Color(0xffeeeeee),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff008700),
+    color: Color(0xff444444),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff008700),
+    color: Color(0xff444444),
+  ),
   'comment': TextStyle(color: Color(0xff5f8700)),
   'tag': TextStyle(color: Color(0xff0087af)),
   'subst': TextStyle(color: Color(0xff444444)),
@@ -50,7 +56,9 @@ const papercolorLightTheme = {
   'keyword': TextStyle(color: Color(0xff005faf)),
   'emphasis': TextStyle(color: Color(0xff005faf), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xff005f87)),
-  'meta-keyword':
-      TextStyle(color: Color(0xff005f87), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xff005f87),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xff005f87)),
 };

@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const oceanTheme = {
-  'root':
-      TextStyle(color: Color(0xffc0c5ce), backgroundColor: Color(0xff2b303b)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff4f5b66), color: Color(0xffc0c5ce)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff4f5b66), color: Color(0xffc0c5ce)),
+  'root': TextStyle(
+    color: Color(0xffc0c5ce),
+    backgroundColor: Color(0xff2b303b),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff4f5b66),
+    color: Color(0xffc0c5ce),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff4f5b66),
+    color: Color(0xffc0c5ce),
+  ),
   'comment': TextStyle(color: Color(0xff65737e)),
   'tag': TextStyle(color: Color(0xffa7adba)),
   'subst': TextStyle(color: Color(0xffc0c5ce)),
@@ -50,7 +56,9 @@ const oceanTheme = {
   'keyword': TextStyle(color: Color(0xffb48ead)),
   'emphasis': TextStyle(color: Color(0xffb48ead), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffab7967)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffab7967), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffab7967),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffab7967)),
 };

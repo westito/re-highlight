@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const fruitSodaTheme = {
-  'root':
-      TextStyle(color: Color(0xff515151), backgroundColor: Color(0xfff1ecf1)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xffd8d5d5), color: Color(0xff515151)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xffd8d5d5), color: Color(0xff515151)),
+  'root': TextStyle(
+    color: Color(0xff515151),
+    backgroundColor: Color(0xfff1ecf1),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xffd8d5d5),
+    color: Color(0xff515151),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xffd8d5d5),
+    color: Color(0xff515151),
+  ),
   'comment': TextStyle(color: Color(0xffb5b4b6)),
   'tag': TextStyle(color: Color(0xff979598)),
   'subst': TextStyle(color: Color(0xff515151)),
@@ -50,7 +56,9 @@ const fruitSodaTheme = {
   'keyword': TextStyle(color: Color(0xff611fce)),
   'emphasis': TextStyle(color: Color(0xff611fce), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffb16f40)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffb16f40), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffb16f40),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffb16f40)),
 };

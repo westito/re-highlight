@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const gruvboxLightMediumTheme = {
-  'root':
-      TextStyle(color: Color(0xff504945), backgroundColor: Color(0xfffbf1c7)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xffd5c4a1), color: Color(0xff504945)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xffd5c4a1), color: Color(0xff504945)),
+  'root': TextStyle(
+    color: Color(0xff504945),
+    backgroundColor: Color(0xfffbf1c7),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xffd5c4a1),
+    color: Color(0xff504945),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xffd5c4a1),
+    color: Color(0xff504945),
+  ),
   'comment': TextStyle(color: Color(0xffbdae93)),
   'tag': TextStyle(color: Color(0xff665c54)),
   'subst': TextStyle(color: Color(0xff504945)),
@@ -50,7 +56,9 @@ const gruvboxLightMediumTheme = {
   'keyword': TextStyle(color: Color(0xff8f3f71)),
   'emphasis': TextStyle(color: Color(0xff8f3f71), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffd65d0e)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffd65d0e), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffd65d0e),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffd65d0e)),
 };

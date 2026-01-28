@@ -39,5 +39,4 @@ void main() {
       expect(result, highlight.getLanguage('csharp'));
     });
   });
-
 }

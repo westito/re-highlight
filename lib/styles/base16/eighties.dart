@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const eightiesTheme = {
-  'root':
-      TextStyle(color: Color(0xffd3d0c8), backgroundColor: Color(0xff2d2d2d)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff515151), color: Color(0xffd3d0c8)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff515151), color: Color(0xffd3d0c8)),
+  'root': TextStyle(
+    color: Color(0xffd3d0c8),
+    backgroundColor: Color(0xff2d2d2d),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff515151),
+    color: Color(0xffd3d0c8),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff515151),
+    color: Color(0xffd3d0c8),
+  ),
   'comment': TextStyle(color: Color(0xff747369)),
   'tag': TextStyle(color: Color(0xffa09f93)),
   'subst': TextStyle(color: Color(0xffd3d0c8)),
@@ -50,7 +56,9 @@ const eightiesTheme = {
   'keyword': TextStyle(color: Color(0xffcc99cc)),
   'emphasis': TextStyle(color: Color(0xffcc99cc), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffd27b53)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffd27b53), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffd27b53),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffd27b53)),
 };

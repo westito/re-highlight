@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const blackMetalGorgorothTheme = {
-  'root':
-      TextStyle(color: Color(0xffc1c1c1), backgroundColor: Color(0xff000000)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff222222), color: Color(0xffc1c1c1)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff222222), color: Color(0xffc1c1c1)),
+  'root': TextStyle(
+    color: Color(0xffc1c1c1),
+    backgroundColor: Color(0xff000000),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff222222),
+    color: Color(0xffc1c1c1),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff222222),
+    color: Color(0xffc1c1c1),
+  ),
   'comment': TextStyle(color: Color(0xff333333)),
   'tag': TextStyle(color: Color(0xff999999)),
   'subst': TextStyle(color: Color(0xffc1c1c1)),
@@ -50,7 +56,9 @@ const blackMetalGorgorothTheme = {
   'keyword': TextStyle(color: Color(0xff999999)),
   'emphasis': TextStyle(color: Color(0xff999999), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xff444444)),
-  'meta-keyword':
-      TextStyle(color: Color(0xff444444), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xff444444),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xff444444)),
 };

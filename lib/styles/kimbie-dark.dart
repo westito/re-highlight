@@ -3,8 +3,10 @@
 import 'package:flutter/painting.dart';
 
 const kimbieDarkTheme = {
-  'root':
-      TextStyle(backgroundColor: Color(0xff221a0f), color: Color(0xffd3af86)),
+  'root': TextStyle(
+    backgroundColor: Color(0xff221a0f),
+    color: Color(0xffd3af86),
+  ),
   'comment': TextStyle(color: Color(0xffd6baad)),
   'quote': TextStyle(color: Color(0xffd6baad)),
   'variable': TextStyle(color: Color(0xffdc3958)),

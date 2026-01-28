@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const harmonic16LightTheme = {
-  'root':
-      TextStyle(color: Color(0xff405c79), backgroundColor: Color(0xfff7f9fb)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xffcbd6e2), color: Color(0xff405c79)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xffcbd6e2), color: Color(0xff405c79)),
+  'root': TextStyle(
+    color: Color(0xff405c79),
+    backgroundColor: Color(0xfff7f9fb),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xffcbd6e2),
+    color: Color(0xff405c79),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xffcbd6e2),
+    color: Color(0xff405c79),
+  ),
   'comment': TextStyle(color: Color(0xffaabcce)),
   'tag': TextStyle(color: Color(0xff627e99)),
   'subst': TextStyle(color: Color(0xff405c79)),
@@ -50,7 +56,9 @@ const harmonic16LightTheme = {
   'keyword': TextStyle(color: Color(0xffbf568b)),
   'emphasis': TextStyle(color: Color(0xffbf568b), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffbf5656)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffbf5656), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffbf5656),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffbf5656)),
 };

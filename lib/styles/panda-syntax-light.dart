@@ -3,8 +3,10 @@
 import 'package:flutter/painting.dart';
 
 const pandaSyntaxLightTheme = {
-  'root':
-      TextStyle(color: Color(0xff2a2c2d), backgroundColor: Color(0xffe6e6e6)),
+  'root': TextStyle(
+    color: Color(0xff2a2c2d),
+    backgroundColor: Color(0xffe6e6e6),
+  ),
   'emphasis': TextStyle(fontStyle: FontStyle.italic),
   'strong': TextStyle(fontWeight: FontWeight.bold),
   'comment': TextStyle(color: Color(0xff676B79), fontStyle: FontStyle.italic),

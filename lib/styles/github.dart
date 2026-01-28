@@ -3,8 +3,10 @@
 import 'package:flutter/painting.dart';
 
 const githubTheme = {
-  'root':
-      TextStyle(color: Color(0xff24292e), backgroundColor: Color(0xffffffff)),
+  'root': TextStyle(
+    color: Color(0xff24292e),
+    backgroundColor: Color(0xffffffff),
+  ),
   'doctag': TextStyle(color: Color(0xffd73a49)),
   'keyword': TextStyle(color: Color(0xffd73a49)),
   'meta-keyword': TextStyle(color: Color(0xffd73a49)),
@@ -43,8 +45,12 @@ const githubTheme = {
   'bullet': TextStyle(color: Color(0xff735c0f)),
   'emphasis': TextStyle(color: Color(0xff24292e), fontStyle: FontStyle.italic),
   'strong': TextStyle(color: Color(0xff24292e), fontWeight: FontWeight.bold),
-  'addition':
-      TextStyle(color: Color(0xff22863a), backgroundColor: Color(0xfff0fff4)),
-  'deletion':
-      TextStyle(color: Color(0xffb31d28), backgroundColor: Color(0xffffeef0)),
+  'addition': TextStyle(
+    color: Color(0xff22863a),
+    backgroundColor: Color(0xfff0fff4),
+  ),
+  'deletion': TextStyle(
+    color: Color(0xffb31d28),
+    backgroundColor: Color(0xffffeef0),
+  ),
 };

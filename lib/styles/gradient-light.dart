@@ -3,25 +3,35 @@
 import 'package:flutter/painting.dart';
 
 const gradientLightTheme = {
-  'root':
-      TextStyle(backgroundColor: Color(0xfff9ccff), color: Color(0xff250482)),
+  'root': TextStyle(
+    backgroundColor: Color(0xfff9ccff),
+    color: Color(0xff250482),
+  ),
   'subtr': TextStyle(color: Color(0xff01958B)),
   'doctag': TextStyle(color: Color(0xffCB7200)),
   'meta': TextStyle(color: Color(0xffCB7200)),
   'comment': TextStyle(color: Color(0xffCB7200)),
   'quote': TextStyle(color: Color(0xffCB7200), fontStyle: FontStyle.italic),
-  'selector-tag':
-      TextStyle(color: Color(0xff07BD5F), fontWeight: FontWeight.bold),
-  'selector-id':
-      TextStyle(color: Color(0xff07BD5F), fontWeight: FontWeight.bold),
-  'template-tag':
-      TextStyle(color: Color(0xff07BD5F), fontWeight: FontWeight.bold),
+  'selector-tag': TextStyle(
+    color: Color(0xff07BD5F),
+    fontWeight: FontWeight.bold,
+  ),
+  'selector-id': TextStyle(
+    color: Color(0xff07BD5F),
+    fontWeight: FontWeight.bold,
+  ),
+  'template-tag': TextStyle(
+    color: Color(0xff07BD5F),
+    fontWeight: FontWeight.bold,
+  ),
   'regexp': TextStyle(color: Color(0xff07BD5F)),
   'attr': TextStyle(color: Color(0xff07BD5F)),
   'tag': TextStyle(color: Color(0xff07BD5F)),
   'params': TextStyle(color: Color(0xff43449F), fontWeight: FontWeight.bold),
-  'selector-class':
-      TextStyle(color: Color(0xff43449F), fontWeight: FontWeight.bold),
+  'selector-class': TextStyle(
+    color: Color(0xff43449F),
+    fontWeight: FontWeight.bold,
+  ),
   'bullet': TextStyle(color: Color(0xff43449F)),
   'keyword': TextStyle(color: Color(0xff7D2801), fontWeight: FontWeight.bold),
   'section': TextStyle(color: Color(0xff7D2801), fontWeight: FontWeight.bold),

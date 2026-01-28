@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const novaTheme = {
-  'root':
-      TextStyle(color: Color(0xffC5D4DD), backgroundColor: Color(0xff3C4C55)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff6A7D89), color: Color(0xffC5D4DD)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff6A7D89), color: Color(0xffC5D4DD)),
+  'root': TextStyle(
+    color: Color(0xffC5D4DD),
+    backgroundColor: Color(0xff3C4C55),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff6A7D89),
+    color: Color(0xffC5D4DD),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff6A7D89),
+    color: Color(0xffC5D4DD),
+  ),
   'comment': TextStyle(color: Color(0xff899BA6)),
   'tag': TextStyle(color: Color(0xff899BA6)),
   'subst': TextStyle(color: Color(0xffC5D4DD)),
@@ -50,7 +56,9 @@ const novaTheme = {
   'keyword': TextStyle(color: Color(0xff9A93E1)),
   'emphasis': TextStyle(color: Color(0xff9A93E1), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffF2C38F)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffF2C38F), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffF2C38F),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffF2C38F)),
 };

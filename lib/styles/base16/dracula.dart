@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const draculaTheme = {
-  'root':
-      TextStyle(color: Color(0xffe9e9f4), backgroundColor: Color(0xff282936)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff4d4f68), color: Color(0xffe9e9f4)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff4d4f68), color: Color(0xffe9e9f4)),
+  'root': TextStyle(
+    color: Color(0xffe9e9f4),
+    backgroundColor: Color(0xff282936),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff4d4f68),
+    color: Color(0xffe9e9f4),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff4d4f68),
+    color: Color(0xffe9e9f4),
+  ),
   'comment': TextStyle(color: Color(0xff626483)),
   'tag': TextStyle(color: Color(0xff62d6e8)),
   'subst': TextStyle(color: Color(0xffe9e9f4)),
@@ -50,7 +56,9 @@ const draculaTheme = {
   'keyword': TextStyle(color: Color(0xffb45bcf)),
   'emphasis': TextStyle(color: Color(0xffb45bcf), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xff00f769)),
-  'meta-keyword':
-      TextStyle(color: Color(0xff00f769), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xff00f769),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xff00f769)),
 };

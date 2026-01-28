@@ -3,8 +3,10 @@
 import 'package:flutter/painting.dart';
 
 const intellijLightTheme = {
-  'root':
-      TextStyle(color: Color(0xff000000), backgroundColor: Color(0xffffffff)),
+  'root': TextStyle(
+    color: Color(0xff000000),
+    backgroundColor: Color(0xffffffff),
+  ),
   'subst': TextStyle(color: Color(0xff000000)),
   'title': TextStyle(color: Color(0xff000000)),
   'title.function_': TextStyle(color: Color(0xff7A7A43)),

@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const gruvboxDarkPaleTheme = {
-  'root':
-      TextStyle(color: Color(0xffdab997), backgroundColor: Color(0xff262626)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff4e4e4e), color: Color(0xffdab997)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff4e4e4e), color: Color(0xffdab997)),
+  'root': TextStyle(
+    color: Color(0xffdab997),
+    backgroundColor: Color(0xff262626),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff4e4e4e),
+    color: Color(0xffdab997),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff4e4e4e),
+    color: Color(0xffdab997),
+  ),
   'comment': TextStyle(color: Color(0xff8a8a8a)),
   'tag': TextStyle(color: Color(0xff949494)),
   'subst': TextStyle(color: Color(0xffdab997)),
@@ -50,7 +56,9 @@ const gruvboxDarkPaleTheme = {
   'keyword': TextStyle(color: Color(0xffd485ad)),
   'emphasis': TextStyle(color: Color(0xffd485ad), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffd65d0e)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffd65d0e), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffd65d0e),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffd65d0e)),
 };

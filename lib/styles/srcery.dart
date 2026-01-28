@@ -3,8 +3,10 @@
 import 'package:flutter/painting.dart';
 
 const srceryTheme = {
-  'root':
-      TextStyle(backgroundColor: Color(0xff1C1B19), color: Color(0xffFCE8C3)),
+  'root': TextStyle(
+    backgroundColor: Color(0xff1C1B19),
+    color: Color(0xffFCE8C3),
+  ),
   'subst': TextStyle(color: Color(0xffFCE8C3)),
   'quote': TextStyle(color: Color(0xffFCE8C3)),
   'literal': TextStyle(color: Color(0xffFCE8C3)),

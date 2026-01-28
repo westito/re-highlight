@@ -2,14 +2,20 @@
 
 import 'package:re_highlight/re_highlight.dart';
 
-final langPythonRepl = Mode(refs: {}, aliases: [
-  "pycon"
-], contains: <Mode>[
-  Mode(
+final langPythonRepl = Mode(
+  refs: {},
+  aliases: ["pycon"],
+  contains: <Mode>[
+    Mode(
       className: 'meta.prompt',
-      starts: Mode(end: " |\$", starts: Mode(end: "\$", subLanguage: "python")),
+      starts: Mode(
+        end: " |\$",
+        starts: Mode(end: "\$", subLanguage: "python"),
+      ),
       variants: <Mode>[
         Mode(begin: "^>>>(?=[ ]|\$)"),
-        Mode(begin: "^\\.\\.\\.(?=[ ]|\$)")
-      ])
-]);
+        Mode(begin: "^\\.\\.\\.(?=[ ]|\$)"),
+      ],
+    ),
+  ],
+);

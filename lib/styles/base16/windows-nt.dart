@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const windowsNtTheme = {
-  'root':
-      TextStyle(color: Color(0xffc0c0c0), backgroundColor: Color(0xff000000)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff555555), color: Color(0xffc0c0c0)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff555555), color: Color(0xffc0c0c0)),
+  'root': TextStyle(
+    color: Color(0xffc0c0c0),
+    backgroundColor: Color(0xff000000),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff555555),
+    color: Color(0xffc0c0c0),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff555555),
+    color: Color(0xffc0c0c0),
+  ),
   'comment': TextStyle(color: Color(0xff808080)),
   'tag': TextStyle(color: Color(0xffa1a1a1)),
   'subst': TextStyle(color: Color(0xffc0c0c0)),
@@ -50,7 +56,9 @@ const windowsNtTheme = {
   'keyword': TextStyle(color: Color(0xffff00ff)),
   'emphasis': TextStyle(color: Color(0xffff00ff), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xff008000)),
-  'meta-keyword':
-      TextStyle(color: Color(0xff008000), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xff008000),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xff008000)),
 };

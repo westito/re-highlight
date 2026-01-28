@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const brushTreesTheme = {
-  'root':
-      TextStyle(color: Color(0xff6D828E), backgroundColor: Color(0xffE3EFEF)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xffB0C5C8), color: Color(0xff6D828E)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xffB0C5C8), color: Color(0xff6D828E)),
+  'root': TextStyle(
+    color: Color(0xff6D828E),
+    backgroundColor: Color(0xffE3EFEF),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xffB0C5C8),
+    color: Color(0xff6D828E),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xffB0C5C8),
+    color: Color(0xff6D828E),
+  ),
   'comment': TextStyle(color: Color(0xff98AFB5)),
   'tag': TextStyle(color: Color(0xff8299A1)),
   'subst': TextStyle(color: Color(0xff6D828E)),
@@ -50,7 +56,9 @@ const brushTreesTheme = {
   'keyword': TextStyle(color: Color(0xffb386b2)),
   'emphasis': TextStyle(color: Color(0xffb386b2), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffb39f9f)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffb39f9f), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffb39f9f),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffb39f9f)),
 };

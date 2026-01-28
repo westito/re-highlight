@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const humanoidLightTheme = {
-  'root':
-      TextStyle(color: Color(0xff232629), backgroundColor: Color(0xfff8f8f2)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xffdeded8), color: Color(0xff232629)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xffdeded8), color: Color(0xff232629)),
+  'root': TextStyle(
+    color: Color(0xff232629),
+    backgroundColor: Color(0xfff8f8f2),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xffdeded8),
+    color: Color(0xff232629),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xffdeded8),
+    color: Color(0xff232629),
+  ),
   'comment': TextStyle(color: Color(0xffc0c0bd)),
   'tag': TextStyle(color: Color(0xff60615d)),
   'subst': TextStyle(color: Color(0xff232629)),
@@ -50,7 +56,9 @@ const humanoidLightTheme = {
   'keyword': TextStyle(color: Color(0xff700f98)),
   'emphasis': TextStyle(color: Color(0xff700f98), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffb27701)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffb27701), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffb27701),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffb27701)),
 };

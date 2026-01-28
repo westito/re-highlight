@@ -45,8 +45,10 @@ const tokyoNightLightTheme = {
   'char.escape_': TextStyle(color: Color(0xff5a4a78)),
   'attr': TextStyle(color: Color(0xff5a4a78)),
   'punctuation': TextStyle(color: Color(0xff343b58)),
-  'root':
-      TextStyle(backgroundColor: Color(0xffd5d6db), color: Color(0xff565a6e)),
+  'root': TextStyle(
+    backgroundColor: Color(0xffd5d6db),
+    color: Color(0xff565a6e),
+  ),
   'emphasis': TextStyle(fontStyle: FontStyle.italic),
   'strong': TextStyle(fontWeight: FontWeight.bold),
 };

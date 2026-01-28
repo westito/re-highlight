@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const solarizedLightTheme = {
-  'root':
-      TextStyle(color: Color(0xff586e75), backgroundColor: Color(0xfffdf6e3)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff93a1a1), color: Color(0xff586e75)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff93a1a1), color: Color(0xff586e75)),
+  'root': TextStyle(
+    color: Color(0xff586e75),
+    backgroundColor: Color(0xfffdf6e3),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff93a1a1),
+    color: Color(0xff586e75),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff93a1a1),
+    color: Color(0xff586e75),
+  ),
   'comment': TextStyle(color: Color(0xff839496)),
   'tag': TextStyle(color: Color(0xff657b83)),
   'subst': TextStyle(color: Color(0xff586e75)),
@@ -50,7 +56,9 @@ const solarizedLightTheme = {
   'keyword': TextStyle(color: Color(0xff6c71c4)),
   'emphasis': TextStyle(color: Color(0xff6c71c4), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffd33682)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffd33682), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffd33682),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffd33682)),
 };

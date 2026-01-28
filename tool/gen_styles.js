@@ -9,6 +9,11 @@ const NOTICE_COMMENT = '// GENERATED CODE - DO NOT MODIFY BY HAND\n\n';
 
 const stylesDir = 'node_modules/highlight.js/styles';
 
+const toDartName = (fileName) => {
+  const name = lodash.camelCase(fileName);
+  return /^[0-9]/.test(name) ? `style${name}` : name;
+};
+
 function _generateAllStyles() {
   const styles = fs.readdirSync(stylesDir).filter(
     file => path.basename(file).endsWith('.css') && !path.basename(file).endsWith('min.css')
@@ -16,7 +21,7 @@ function _generateAllStyles() {
     let fileName = file.slice(0, file.length - 4)
     return {
       path: path.join(stylesDir, file),
-      name: lodash.camelCase(fileName),
+      name: toDartName(fileName),
       fileName: fileName
     }
   });
@@ -27,7 +32,7 @@ function _generateAllStyles() {
     let fileName = file.slice(0, file.length - 4)
     return {
       path: path.join(stylesDir, 'base16', file),
-      name: lodash.camelCase(fileName),
+      name: toDartName(fileName),
       dirName: 'base16',
       fileName: fileName
     }

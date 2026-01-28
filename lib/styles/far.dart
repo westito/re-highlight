@@ -3,8 +3,10 @@
 import 'package:flutter/painting.dart';
 
 const farTheme = {
-  'root':
-      TextStyle(color: Color(0xff00ffff), backgroundColor: Color(0xff000080)),
+  'root': TextStyle(
+    color: Color(0xff00ffff),
+    backgroundColor: Color(0xff000080),
+  ),
   'string': TextStyle(color: Color(0xffffff00)),
   'attribute': TextStyle(color: Color(0xffffff00)),
   'symbol': TextStyle(color: Color(0xffffff00)),
@@ -14,8 +16,10 @@ const farTheme = {
   'template-variable': TextStyle(color: Color(0xffffff00)),
   'addition': TextStyle(color: Color(0xffffff00)),
   'keyword': TextStyle(color: Color(0xffffffff), fontWeight: FontWeight.bold),
-  'selector-tag':
-      TextStyle(color: Color(0xffffffff), fontWeight: FontWeight.bold),
+  'selector-tag': TextStyle(
+    color: Color(0xffffffff),
+    fontWeight: FontWeight.bold,
+  ),
   'section': TextStyle(color: Color(0xffffffff), fontWeight: FontWeight.bold),
   'type': TextStyle(color: Color(0xffffffff)),
   'name': TextStyle(color: Color(0xffffffff), fontWeight: FontWeight.bold),

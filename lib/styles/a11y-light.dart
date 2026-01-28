@@ -3,8 +3,10 @@
 import 'package:flutter/painting.dart';
 
 const a11YLightTheme = {
-  'root':
-      TextStyle(backgroundColor: Color(0xfffefefe), color: Color(0xff545454)),
+  'root': TextStyle(
+    backgroundColor: Color(0xfffefefe),
+    color: Color(0xff545454),
+  ),
   'comment': TextStyle(color: Color(0xff696969)),
   'quote': TextStyle(color: Color(0xff696969)),
   'variable': TextStyle(color: Color(0xffd91e18)),

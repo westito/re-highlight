@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const sandcastleTheme = {
-  'root':
-      TextStyle(color: Color(0xffa89984), backgroundColor: Color(0xff282c34)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff3e4451), color: Color(0xffa89984)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff3e4451), color: Color(0xffa89984)),
+  'root': TextStyle(
+    color: Color(0xffa89984),
+    backgroundColor: Color(0xff282c34),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff3e4451),
+    color: Color(0xffa89984),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff3e4451),
+    color: Color(0xffa89984),
+  ),
   'comment': TextStyle(color: Color(0xff665c54)),
   'tag': TextStyle(color: Color(0xff928374)),
   'subst': TextStyle(color: Color(0xffa89984)),
@@ -50,7 +56,9 @@ const sandcastleTheme = {
   'keyword': TextStyle(color: Color(0xffd75f5f)),
   'emphasis': TextStyle(color: Color(0xffd75f5f), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffa87322)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffa87322), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffa87322),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffa87322)),
 };

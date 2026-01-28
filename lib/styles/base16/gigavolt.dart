@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const gigavoltTheme = {
-  'root':
-      TextStyle(color: Color(0xffe9e7e1), backgroundColor: Color(0xff202126)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff5a576e), color: Color(0xffe9e7e1)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff5a576e), color: Color(0xffe9e7e1)),
+  'root': TextStyle(
+    color: Color(0xffe9e7e1),
+    backgroundColor: Color(0xff202126),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff5a576e),
+    color: Color(0xffe9e7e1),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff5a576e),
+    color: Color(0xffe9e7e1),
+  ),
   'comment': TextStyle(color: Color(0xffa1d2e6)),
   'tag': TextStyle(color: Color(0xffcad3ff)),
   'subst': TextStyle(color: Color(0xffe9e7e1)),
@@ -50,7 +56,9 @@ const gigavoltTheme = {
   'keyword': TextStyle(color: Color(0xffae94f9)),
   'emphasis': TextStyle(color: Color(0xffae94f9), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xff6187ff)),
-  'meta-keyword':
-      TextStyle(color: Color(0xff6187ff), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xff6187ff),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xff6187ff)),
 };

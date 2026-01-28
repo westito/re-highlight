@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const greenScreenTheme = {
-  'root':
-      TextStyle(color: Color(0xff00bb00), backgroundColor: Color(0xff001100)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff005500), color: Color(0xff00bb00)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff005500), color: Color(0xff00bb00)),
+  'root': TextStyle(
+    color: Color(0xff00bb00),
+    backgroundColor: Color(0xff001100),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff005500),
+    color: Color(0xff00bb00),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff005500),
+    color: Color(0xff00bb00),
+  ),
   'comment': TextStyle(color: Color(0xff007700)),
   'tag': TextStyle(color: Color(0xff009900)),
   'subst': TextStyle(color: Color(0xff00bb00)),
@@ -50,7 +56,9 @@ const greenScreenTheme = {
   'keyword': TextStyle(color: Color(0xff00bb00)),
   'emphasis': TextStyle(color: Color(0xff00bb00), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xff005500)),
-  'meta-keyword':
-      TextStyle(color: Color(0xff005500), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xff005500),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xff005500)),
 };

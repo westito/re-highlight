@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const tenderTheme = {
-  'root':
-      TextStyle(color: Color(0xffeeeeee), backgroundColor: Color(0xff282828)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff484848), color: Color(0xffeeeeee)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff484848), color: Color(0xffeeeeee)),
+  'root': TextStyle(
+    color: Color(0xffeeeeee),
+    backgroundColor: Color(0xff282828),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff484848),
+    color: Color(0xffeeeeee),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff484848),
+    color: Color(0xffeeeeee),
+  ),
   'comment': TextStyle(color: Color(0xff4c4c4c)),
   'tag': TextStyle(color: Color(0xffb8b8b8)),
   'subst': TextStyle(color: Color(0xffeeeeee)),
@@ -50,7 +56,9 @@ const tenderTheme = {
   'keyword': TextStyle(color: Color(0xffd3b987)),
   'emphasis': TextStyle(color: Color(0xffd3b987), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffa16946)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffa16946), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffa16946),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffa16946)),
 };

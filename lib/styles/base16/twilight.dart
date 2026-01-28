@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const twilightTheme = {
-  'root':
-      TextStyle(color: Color(0xffa7a7a7), backgroundColor: Color(0xff1e1e1e)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff464b50), color: Color(0xffa7a7a7)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff464b50), color: Color(0xffa7a7a7)),
+  'root': TextStyle(
+    color: Color(0xffa7a7a7),
+    backgroundColor: Color(0xff1e1e1e),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff464b50),
+    color: Color(0xffa7a7a7),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff464b50),
+    color: Color(0xffa7a7a7),
+  ),
   'comment': TextStyle(color: Color(0xff5f5a60)),
   'tag': TextStyle(color: Color(0xff838184)),
   'subst': TextStyle(color: Color(0xffa7a7a7)),
@@ -50,7 +56,9 @@ const twilightTheme = {
   'keyword': TextStyle(color: Color(0xff9b859d)),
   'emphasis': TextStyle(color: Color(0xff9b859d), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xff9b703f)),
-  'meta-keyword':
-      TextStyle(color: Color(0xff9b703f), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xff9b703f),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xff9b703f)),
 };

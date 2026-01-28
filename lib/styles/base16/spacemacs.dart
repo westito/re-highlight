@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const spacemacsTheme = {
-  'root':
-      TextStyle(color: Color(0xffa3a3a3), backgroundColor: Color(0xff1f2022)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff444155), color: Color(0xffa3a3a3)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff444155), color: Color(0xffa3a3a3)),
+  'root': TextStyle(
+    color: Color(0xffa3a3a3),
+    backgroundColor: Color(0xff1f2022),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff444155),
+    color: Color(0xffa3a3a3),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff444155),
+    color: Color(0xffa3a3a3),
+  ),
   'comment': TextStyle(color: Color(0xff585858)),
   'tag': TextStyle(color: Color(0xffb8b8b8)),
   'subst': TextStyle(color: Color(0xffa3a3a3)),
@@ -50,7 +56,9 @@ const spacemacsTheme = {
   'keyword': TextStyle(color: Color(0xffa31db1)),
   'emphasis': TextStyle(color: Color(0xffa31db1), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffb03060)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffb03060), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffb03060),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffb03060)),
 };

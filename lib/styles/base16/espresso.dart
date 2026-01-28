@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const espressoTheme = {
-  'root':
-      TextStyle(color: Color(0xffcccccc), backgroundColor: Color(0xff2d2d2d)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff515151), color: Color(0xffcccccc)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff515151), color: Color(0xffcccccc)),
+  'root': TextStyle(
+    color: Color(0xffcccccc),
+    backgroundColor: Color(0xff2d2d2d),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff515151),
+    color: Color(0xffcccccc),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff515151),
+    color: Color(0xffcccccc),
+  ),
   'comment': TextStyle(color: Color(0xff777777)),
   'tag': TextStyle(color: Color(0xffb4b7b4)),
   'subst': TextStyle(color: Color(0xffcccccc)),
@@ -50,7 +56,9 @@ const espressoTheme = {
   'keyword': TextStyle(color: Color(0xffd197d9)),
   'emphasis': TextStyle(color: Color(0xffd197d9), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xfff97394)),
-  'meta-keyword':
-      TextStyle(color: Color(0xfff97394), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xfff97394),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xfff97394)),
 };

@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const mochaTheme = {
-  'root':
-      TextStyle(color: Color(0xffd0c8c6), backgroundColor: Color(0xff3B3228)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff645240), color: Color(0xffd0c8c6)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff645240), color: Color(0xffd0c8c6)),
+  'root': TextStyle(
+    color: Color(0xffd0c8c6),
+    backgroundColor: Color(0xff3B3228),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff645240),
+    color: Color(0xffd0c8c6),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff645240),
+    color: Color(0xffd0c8c6),
+  ),
   'comment': TextStyle(color: Color(0xff7e705a)),
   'tag': TextStyle(color: Color(0xffb8afad)),
   'subst': TextStyle(color: Color(0xffd0c8c6)),
@@ -50,7 +56,9 @@ const mochaTheme = {
   'keyword': TextStyle(color: Color(0xffa89bb9)),
   'emphasis': TextStyle(color: Color(0xffa89bb9), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffbb9584)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffbb9584), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffbb9584),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffbb9584)),
 };

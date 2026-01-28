@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const darculaTheme = {
-  'root':
-      TextStyle(color: Color(0xffa9b7c6), backgroundColor: Color(0xff2b2b2b)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff323232), color: Color(0xffa9b7c6)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff323232), color: Color(0xffa9b7c6)),
+  'root': TextStyle(
+    color: Color(0xffa9b7c6),
+    backgroundColor: Color(0xff2b2b2b),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff323232),
+    color: Color(0xffa9b7c6),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff323232),
+    color: Color(0xffa9b7c6),
+  ),
   'comment': TextStyle(color: Color(0xff606366)),
   'tag': TextStyle(color: Color(0xffa4a3a3)),
   'subst': TextStyle(color: Color(0xffa9b7c6)),
@@ -50,7 +56,9 @@ const darculaTheme = {
   'keyword': TextStyle(color: Color(0xffcc7832)),
   'emphasis': TextStyle(color: Color(0xffcc7832), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xff808080)),
-  'meta-keyword':
-      TextStyle(color: Color(0xff808080), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xff808080),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xff808080)),
 };

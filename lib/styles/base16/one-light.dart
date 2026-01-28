@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const oneLightTheme = {
-  'root':
-      TextStyle(color: Color(0xff383a42), backgroundColor: Color(0xfffafafa)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xffe5e5e6), color: Color(0xff383a42)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xffe5e5e6), color: Color(0xff383a42)),
+  'root': TextStyle(
+    color: Color(0xff383a42),
+    backgroundColor: Color(0xfffafafa),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xffe5e5e6),
+    color: Color(0xff383a42),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xffe5e5e6),
+    color: Color(0xff383a42),
+  ),
   'comment': TextStyle(color: Color(0xffa0a1a7)),
   'tag': TextStyle(color: Color(0xff696c77)),
   'subst': TextStyle(color: Color(0xff383a42)),
@@ -50,7 +56,9 @@ const oneLightTheme = {
   'keyword': TextStyle(color: Color(0xffa626a4)),
   'emphasis': TextStyle(color: Color(0xffa626a4), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xff986801)),
-  'meta-keyword':
-      TextStyle(color: Color(0xff986801), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xff986801),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xff986801)),
 };

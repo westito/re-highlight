@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const rebeccaTheme = {
-  'root':
-      TextStyle(color: Color(0xfff1eff8), backgroundColor: Color(0xff292a44)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff383a62), color: Color(0xfff1eff8)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff383a62), color: Color(0xfff1eff8)),
+  'root': TextStyle(
+    color: Color(0xfff1eff8),
+    backgroundColor: Color(0xff292a44),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff383a62),
+    color: Color(0xfff1eff8),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff383a62),
+    color: Color(0xfff1eff8),
+  ),
   'comment': TextStyle(color: Color(0xff666699)),
   'tag': TextStyle(color: Color(0xffa0a0c5)),
   'subst': TextStyle(color: Color(0xfff1eff8)),
@@ -50,7 +56,9 @@ const rebeccaTheme = {
   'keyword': TextStyle(color: Color(0xff7aa5ff)),
   'emphasis': TextStyle(color: Color(0xff7aa5ff), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffff79c6)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffff79c6), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffff79c6),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffff79c6)),
 };

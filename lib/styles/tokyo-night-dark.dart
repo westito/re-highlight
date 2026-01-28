@@ -45,8 +45,10 @@ const tokyoNightDarkTheme = {
   'char.escape_': TextStyle(color: Color(0xffbb9af7)),
   'attr': TextStyle(color: Color(0xffbb9af7)),
   'punctuation': TextStyle(color: Color(0xffc0caf5)),
-  'root':
-      TextStyle(backgroundColor: Color(0xff1a1b26), color: Color(0xff9aa5ce)),
+  'root': TextStyle(
+    backgroundColor: Color(0xff1a1b26),
+    color: Color(0xff9aa5ce),
+  ),
   'emphasis': TextStyle(fontStyle: FontStyle.italic),
   'strong': TextStyle(fontWeight: FontWeight.bold),
 };

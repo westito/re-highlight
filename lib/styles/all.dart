@@ -1,5 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
+import '1c-light.dart';
 import 'a11y-dark.dart';
 import 'a11y-light.dart';
 import 'agate.dart';
@@ -14,6 +15,10 @@ import 'atom-one-light.dart';
 import 'brown-paper.dart';
 import 'codepen-embed.dart';
 import 'color-brewer.dart';
+import 'cybertopia-cherry.dart';
+import 'cybertopia-dimmer.dart';
+import 'cybertopia-icecap.dart';
+import 'cybertopia-saturated.dart';
 import 'dark.dart';
 import 'default.dart';
 import 'devibeans.dart';
@@ -57,6 +62,9 @@ import 'purebasic.dart';
 import 'qtcreator-dark.dart';
 import 'qtcreator-light.dart';
 import 'rainbow.dart';
+import 'rose-pine-dawn.dart';
+import 'rose-pine-moon.dart';
+import 'rose-pine.dart';
 import 'routeros.dart';
 import 'school-book.dart';
 import 'shades-of-purple.dart';
@@ -250,6 +258,7 @@ import 'base16/xcode-dusk.dart' as base16;
 import 'base16/zenburn.dart' as base16;
 
 final builtThemes = {
+  '1c-light': style1CLightTheme,
   'a11y-dark': a11YDarkTheme,
   'a11y-light': a11YLightTheme,
   'agate': agateTheme,
@@ -264,6 +273,10 @@ final builtThemes = {
   'brown-paper': brownPaperTheme,
   'codepen-embed': codepenEmbedTheme,
   'color-brewer': colorBrewerTheme,
+  'cybertopia-cherry': cybertopiaCherryTheme,
+  'cybertopia-dimmer': cybertopiaDimmerTheme,
+  'cybertopia-icecap': cybertopiaIcecapTheme,
+  'cybertopia-saturated': cybertopiaSaturatedTheme,
   'dark': darkTheme,
   'default': defaultTheme,
   'devibeans': devibeansTheme,
@@ -307,6 +320,9 @@ final builtThemes = {
   'qtcreator-dark': qtcreatorDarkTheme,
   'qtcreator-light': qtcreatorLightTheme,
   'rainbow': rainbowTheme,
+  'rose-pine-dawn': rosePineDawnTheme,
+  'rose-pine-moon': rosePineMoonTheme,
+  'rose-pine': rosePineTheme,
   'routeros': routerosTheme,
   'school-book': schoolBookTheme,
   'shades-of-purple': shadesOfPurpleTheme,

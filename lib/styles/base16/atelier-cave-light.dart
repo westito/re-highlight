@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const atelierCaveLightTheme = {
-  'root':
-      TextStyle(color: Color(0xff585260), backgroundColor: Color(0xffefecf4)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff8b8792), color: Color(0xff585260)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff8b8792), color: Color(0xff585260)),
+  'root': TextStyle(
+    color: Color(0xff585260),
+    backgroundColor: Color(0xffefecf4),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff8b8792),
+    color: Color(0xff585260),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff8b8792),
+    color: Color(0xff585260),
+  ),
   'comment': TextStyle(color: Color(0xff7e7887)),
   'tag': TextStyle(color: Color(0xff655f6d)),
   'subst': TextStyle(color: Color(0xff585260)),
@@ -50,7 +56,9 @@ const atelierCaveLightTheme = {
   'keyword': TextStyle(color: Color(0xff955ae7)),
   'emphasis': TextStyle(color: Color(0xff955ae7), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffbf40bf)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffbf40bf), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffbf40bf),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffbf40bf)),
 };

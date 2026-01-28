@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const oceanicnextTheme = {
-  'root':
-      TextStyle(color: Color(0xffC0C5CE), backgroundColor: Color(0xff1B2B34)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff4F5B66), color: Color(0xffC0C5CE)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff4F5B66), color: Color(0xffC0C5CE)),
+  'root': TextStyle(
+    color: Color(0xffC0C5CE),
+    backgroundColor: Color(0xff1B2B34),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff4F5B66),
+    color: Color(0xffC0C5CE),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff4F5B66),
+    color: Color(0xffC0C5CE),
+  ),
   'comment': TextStyle(color: Color(0xff65737E)),
   'tag': TextStyle(color: Color(0xffA7ADBA)),
   'subst': TextStyle(color: Color(0xffC0C5CE)),
@@ -50,7 +56,9 @@ const oceanicnextTheme = {
   'keyword': TextStyle(color: Color(0xffC594C5)),
   'emphasis': TextStyle(color: Color(0xffC594C5), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffAB7967)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffAB7967), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffAB7967),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffAB7967)),
 };

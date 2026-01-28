@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const cupertinoTheme = {
-  'root':
-      TextStyle(color: Color(0xff404040), backgroundColor: Color(0xffffffff)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xffc0c0c0), color: Color(0xff404040)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xffc0c0c0), color: Color(0xff404040)),
+  'root': TextStyle(
+    color: Color(0xff404040),
+    backgroundColor: Color(0xffffffff),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xffc0c0c0),
+    color: Color(0xff404040),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xffc0c0c0),
+    color: Color(0xff404040),
+  ),
   'comment': TextStyle(color: Color(0xff808080)),
   'tag': TextStyle(color: Color(0xff808080)),
   'subst': TextStyle(color: Color(0xff404040)),
@@ -50,7 +56,9 @@ const cupertinoTheme = {
   'keyword': TextStyle(color: Color(0xffa90d91)),
   'emphasis': TextStyle(color: Color(0xffa90d91), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xff826b28)),
-  'meta-keyword':
-      TextStyle(color: Color(0xff826b28), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xff826b28),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xff826b28)),
 };

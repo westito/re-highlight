@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const atlasTheme = {
-  'root':
-      TextStyle(color: Color(0xffa1a19a), backgroundColor: Color(0xff002635)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff517F8D), color: Color(0xffa1a19a)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff517F8D), color: Color(0xffa1a19a)),
+  'root': TextStyle(
+    color: Color(0xffa1a19a),
+    backgroundColor: Color(0xff002635),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff517F8D),
+    color: Color(0xffa1a19a),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff517F8D),
+    color: Color(0xffa1a19a),
+  ),
   'comment': TextStyle(color: Color(0xff6C8B91)),
   'tag': TextStyle(color: Color(0xff869696)),
   'subst': TextStyle(color: Color(0xffa1a19a)),
@@ -50,7 +56,9 @@ const atlasTheme = {
   'keyword': TextStyle(color: Color(0xff9a70a4)),
   'emphasis': TextStyle(color: Color(0xff9a70a4), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffc43060)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffc43060), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffc43060),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffc43060)),
 };

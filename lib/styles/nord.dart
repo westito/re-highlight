@@ -3,12 +3,16 @@
 import 'package:flutter/painting.dart';
 
 const nordTheme = {
-  'root':
-      TextStyle(backgroundColor: Color(0xff2E3440), color: Color(0xffD8DEE9)),
+  'root': TextStyle(
+    backgroundColor: Color(0xff2E3440),
+    color: Color(0xffD8DEE9),
+  ),
   'subst': TextStyle(color: Color(0xffD8DEE9)),
   'selector-tag': TextStyle(color: Color(0xff81A1C1)),
-  'selector-id':
-      TextStyle(color: Color(0xff8FBCBB), fontWeight: FontWeight.bold),
+  'selector-id': TextStyle(
+    color: Color(0xff8FBCBB),
+    fontWeight: FontWeight.bold,
+  ),
   'selector-class': TextStyle(color: Color(0xff8FBCBB)),
   'selector-attr': TextStyle(color: Color(0xff8FBCBB)),
   'property': TextStyle(color: Color(0xff88C0D0)),
@@ -65,8 +69,9 @@ const nordTheme = {
   '.language-diff-meta': TextStyle(color: Color(0xff8FBCBB)),
   '.language-ebnf-attribute': TextStyle(color: Color(0xff8FBCBB)),
   '.language-glsl-built_in': TextStyle(color: Color(0xff88C0D0)),
-  '.language-groovy-meta:not(:first-child)':
-      TextStyle(color: Color(0xffD08770)),
+  '.language-groovy-meta:not(:first-child)': TextStyle(
+    color: Color(0xffD08770),
+  ),
   '.language-haxe-meta': TextStyle(color: Color(0xffD08770)),
   '.language-java-meta': TextStyle(color: Color(0xffD08770)),
   '.language-ldif-attribute': TextStyle(color: Color(0xff8FBCBB)),
@@ -80,7 +85,9 @@ const nordTheme = {
   '.language-scss-keyword': TextStyle(color: Color(0xff81A1C1)),
   '.language-stylus-keyword': TextStyle(color: Color(0xff81A1C1)),
   '.language-swift-meta': TextStyle(color: Color(0xffD08770)),
-  '.language-vim-built_in':
-      TextStyle(color: Color(0xff88C0D0), fontStyle: FontStyle.italic),
+  '.language-vim-built_in': TextStyle(
+    color: Color(0xff88C0D0),
+    fontStyle: FontStyle.italic,
+  ),
   '.language-yaml-meta': TextStyle(color: Color(0xffD08770)),
 };

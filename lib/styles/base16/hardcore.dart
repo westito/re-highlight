@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const hardcoreTheme = {
-  'root':
-      TextStyle(color: Color(0xffcdcdcd), backgroundColor: Color(0xff212121)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff353535), color: Color(0xffcdcdcd)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff353535), color: Color(0xffcdcdcd)),
+  'root': TextStyle(
+    color: Color(0xffcdcdcd),
+    backgroundColor: Color(0xff212121),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff353535),
+    color: Color(0xffcdcdcd),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff353535),
+    color: Color(0xffcdcdcd),
+  ),
   'comment': TextStyle(color: Color(0xff4A4A4A)),
   'tag': TextStyle(color: Color(0xff707070)),
   'subst': TextStyle(color: Color(0xffcdcdcd)),
@@ -50,7 +56,9 @@ const hardcoreTheme = {
   'keyword': TextStyle(color: Color(0xff9e6ffe)),
   'emphasis': TextStyle(color: Color(0xff9e6ffe), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffe8b882)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffe8b882), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffe8b882),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffe8b882)),
 };

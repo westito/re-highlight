@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const solarFlareTheme = {
-  'root':
-      TextStyle(color: Color(0xffA6AFB8), backgroundColor: Color(0xff18262F)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff586875), color: Color(0xffA6AFB8)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff586875), color: Color(0xffA6AFB8)),
+  'root': TextStyle(
+    color: Color(0xffA6AFB8),
+    backgroundColor: Color(0xff18262F),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff586875),
+    color: Color(0xffA6AFB8),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff586875),
+    color: Color(0xffA6AFB8),
+  ),
   'comment': TextStyle(color: Color(0xff667581)),
   'tag': TextStyle(color: Color(0xff85939E)),
   'subst': TextStyle(color: Color(0xffA6AFB8)),
@@ -50,7 +56,9 @@ const solarFlareTheme = {
   'keyword': TextStyle(color: Color(0xffA363D5)),
   'emphasis': TextStyle(color: Color(0xffA363D5), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffD73C9A)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffD73C9A), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffD73C9A),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffD73C9A)),
 };

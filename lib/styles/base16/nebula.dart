@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const nebulaTheme = {
-  'root':
-      TextStyle(color: Color(0xffa4a6a9), backgroundColor: Color(0xff22273b)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff5a8380), color: Color(0xffa4a6a9)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff5a8380), color: Color(0xffa4a6a9)),
+  'root': TextStyle(
+    color: Color(0xffa4a6a9),
+    backgroundColor: Color(0xff22273b),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff5a8380),
+    color: Color(0xffa4a6a9),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff5a8380),
+    color: Color(0xffa4a6a9),
+  ),
   'comment': TextStyle(color: Color(0xff6e6f72)),
   'tag': TextStyle(color: Color(0xff87888b)),
   'subst': TextStyle(color: Color(0xffa4a6a9)),
@@ -50,7 +56,9 @@ const nebulaTheme = {
   'keyword': TextStyle(color: Color(0xff716cae)),
   'emphasis': TextStyle(color: Color(0xff716cae), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xff8c70a7)),
-  'meta-keyword':
-      TextStyle(color: Color(0xff8c70a7), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xff8c70a7),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xff8c70a7)),
 };

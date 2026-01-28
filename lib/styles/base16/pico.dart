@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const picoTheme = {
-  'root':
-      TextStyle(color: Color(0xff5f574f), backgroundColor: Color(0xff000000)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff7e2553), color: Color(0xff5f574f)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff7e2553), color: Color(0xff5f574f)),
+  'root': TextStyle(
+    color: Color(0xff5f574f),
+    backgroundColor: Color(0xff000000),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff7e2553),
+    color: Color(0xff5f574f),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff7e2553),
+    color: Color(0xff5f574f),
+  ),
   'comment': TextStyle(color: Color(0xff008751)),
   'tag': TextStyle(color: Color(0xffab5236)),
   'subst': TextStyle(color: Color(0xff5f574f)),
@@ -50,7 +56,9 @@ const picoTheme = {
   'keyword': TextStyle(color: Color(0xffff77a8)),
   'emphasis': TextStyle(color: Color(0xffff77a8), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffffccaa)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffffccaa), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffffccaa),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffffccaa)),
 };

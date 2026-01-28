@@ -3,8 +3,10 @@
 import 'package:flutter/painting.dart';
 
 const agateTheme = {
-  'root':
-      TextStyle(backgroundColor: Color(0xff333333), color: Color(0xffffffff)),
+  'root': TextStyle(
+    backgroundColor: Color(0xff333333),
+    color: Color(0xffffffff),
+  ),
   'doctag': TextStyle(fontWeight: FontWeight.bold),
   'meta-keyword': TextStyle(fontWeight: FontWeight.bold),
   'name': TextStyle(fontWeight: FontWeight.bold),
@@ -39,10 +41,14 @@ const agateTheme = {
   'selector-pseudo': TextStyle(color: Color(0xffc6b4f0)),
   'regexp': TextStyle(color: Color(0xffc6b4f0)),
   'meta': TextStyle(color: Color(0xfffc9b9b)),
-  'deletion':
-      TextStyle(backgroundColor: Color(0xfffc9b9b), color: Color(0xff333333)),
-  'addition':
-      TextStyle(backgroundColor: Color(0xffa2fca2), color: Color(0xff333333)),
+  'deletion': TextStyle(
+    backgroundColor: Color(0xfffc9b9b),
+    color: Color(0xff333333),
+  ),
+  'addition': TextStyle(
+    backgroundColor: Color(0xffa2fca2),
+    color: Color(0xff333333),
+  ),
   'subst': TextStyle(color: Color(0xffffffff)),
   '.hljs-mark': TextStyle(backgroundColor: Color(0xff555555)),
 };

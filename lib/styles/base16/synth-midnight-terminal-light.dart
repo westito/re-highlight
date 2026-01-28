@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const synthMidnightTerminalLightTheme = {
-  'root':
-      TextStyle(color: Color(0xff28292a), backgroundColor: Color(0xffdddfe0)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xffc1c3c4), color: Color(0xff28292a)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xffc1c3c4), color: Color(0xff28292a)),
+  'root': TextStyle(
+    color: Color(0xff28292a),
+    backgroundColor: Color(0xffdddfe0),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xffc1c3c4),
+    color: Color(0xff28292a),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xffc1c3c4),
+    color: Color(0xff28292a),
+  ),
   'comment': TextStyle(color: Color(0xffa3a5a6)),
   'tag': TextStyle(color: Color(0xff474849)),
   'subst': TextStyle(color: Color(0xff28292a)),
@@ -50,7 +56,9 @@ const synthMidnightTerminalLightTheme = {
   'keyword': TextStyle(color: Color(0xffea5ce2)),
   'emphasis': TextStyle(color: Color(0xffea5ce2), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffcd6320)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffcd6320), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffcd6320),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffcd6320)),
 };

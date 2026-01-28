@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const atelierPlateauLightTheme = {
-  'root':
-      TextStyle(color: Color(0xff585050), backgroundColor: Color(0xfff4ecec)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff8a8585), color: Color(0xff585050)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff8a8585), color: Color(0xff585050)),
+  'root': TextStyle(
+    color: Color(0xff585050),
+    backgroundColor: Color(0xfff4ecec),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff8a8585),
+    color: Color(0xff585050),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff8a8585),
+    color: Color(0xff585050),
+  ),
   'comment': TextStyle(color: Color(0xff7e7777)),
   'tag': TextStyle(color: Color(0xff655d5d)),
   'subst': TextStyle(color: Color(0xff585050)),
@@ -50,7 +56,9 @@ const atelierPlateauLightTheme = {
   'keyword': TextStyle(color: Color(0xff8464c4)),
   'emphasis': TextStyle(color: Color(0xff8464c4), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffbd5187)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffbd5187), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffbd5187),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffbd5187)),
 };

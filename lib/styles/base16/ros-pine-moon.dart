@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const rosPineMoonTheme = {
-  'root':
-      TextStyle(color: Color(0xffe0def4), backgroundColor: Color(0xff232136)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff393552), color: Color(0xffe0def4)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff393552), color: Color(0xffe0def4)),
+  'root': TextStyle(
+    color: Color(0xffe0def4),
+    backgroundColor: Color(0xff232136),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff393552),
+    color: Color(0xffe0def4),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff393552),
+    color: Color(0xffe0def4),
+  ),
   'comment': TextStyle(color: Color(0xff59546d)),
   'tag': TextStyle(color: Color(0xff817c9c)),
   'subst': TextStyle(color: Color(0xffe0def4)),
@@ -50,7 +56,9 @@ const rosPineMoonTheme = {
   'keyword': TextStyle(color: Color(0xffc4a7e7)),
   'emphasis': TextStyle(color: Color(0xffc4a7e7), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffb9b9bc)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffb9b9bc), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffb9b9bc),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffb9b9bc)),
 };

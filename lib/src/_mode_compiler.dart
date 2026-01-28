@@ -6,7 +6,7 @@ RegExp _langRe(Mode language, String value, bool global) {
     value,
     multiLine: true,
     caseSensitive: !(language.caseInsensitive ?? false),
-    unicode: language.unicodeRegex ?? false
+    unicode: language.unicodeRegex ?? false,
   );
 }
 
@@ -14,7 +14,6 @@ RegExp _langRe(Mode language, String value, bool global) {
 /// Given the raw result of a language definition (Language), compiles this so
 /// that it is ready for highlighting code.
 Mode _compileLanguage(Mode language) {
-
   RegExp langRe(String value, [bool global = false]) {
     return _langRe(language, value, global);
   }
@@ -22,20 +21,15 @@ Mode _compileLanguage(Mode language) {
   _ResumableMultiRegex buildModeRegex(Mode language, Mode mode) {
     final _ResumableMultiRegex mm = _ResumableMultiRegex(language);
 
-    mode.contains?.forEach((term) => mm.addRule(term.begin, _RegexOption(
-      rule: term,
-      type: 'begin'
-    )));
+    mode.contains?.forEach(
+      (term) => mm.addRule(term.begin, _RegexOption(rule: term, type: 'begin')),
+    );
 
     if (mode.terminatorEnd != null) {
-      mm.addRule(mode.terminatorEnd!, _RegexOption(
-        type: 'end'
-      ));
+      mm.addRule(mode.terminatorEnd!, _RegexOption(type: 'end'));
     }
     if (mode.illegal != null) {
-      mm.addRule(mode.illegal, _RegexOption(
-        type: 'illegal'
-      ));
+      mm.addRule(mode.illegal, _RegexOption(type: 'illegal'));
     }
 
     return mm;
@@ -77,7 +71,7 @@ Mode _compileLanguage(Mode language) {
       // the distinction between match/begin
       _compileMatch,
       _multiClass,
-      _beforeMatchExt
+      _beforeMatchExt,
     ]) {
       ext(mode, parent);
     }
@@ -93,7 +87,7 @@ Mode _compileLanguage(Mode language) {
       // raw array if they wanted to perhaps manipulate it, etc.
       _compileIllegal,
       // default to 1 relevance if not specified
-      _compileRelevance
+      _compileRelevance,
     ]) {
       ext(mode, parent);
     }
@@ -105,7 +99,8 @@ Mode _compileLanguage(Mode language) {
     mode.isCompiled = true;
 
     String? keywordPattern;
-    if (mode.keywords is Map<String, dynamic> && mode.keywords['\$pattern'] != null) {
+    if (mode.keywords is Map<String, dynamic> &&
+        mode.keywords['\$pattern'] != null) {
       // we need a copy because keywords might be compiled multiple times
       // so we can't go deleting $pattern from the original on the first
       // pass
@@ -131,7 +126,9 @@ Mode _compileLanguage(Mode language) {
       }
       cmode.terminatorEnd = cmode.end ?? '';
       if (mode.endsWithParent == true && parent.terminatorEnd != null) {
-        cmode.terminatorEnd = cmode.terminatorEnd! + (mode.end != null ? '|' : '') + parent.terminatorEnd!;
+        cmode.terminatorEnd = cmode.terminatorEnd! +
+            (mode.end != null ? '|' : '') +
+            parent.terminatorEnd!;
       }
     }
     if (mode.illegal != null) {
@@ -156,15 +153,17 @@ Mode _compileLanguage(Mode language) {
   language.compilerExtensions ??= [];
 
   // self is not valid at the top-level
-  if (language.contains != null && language.contains!.indexWhere((element) => element.self == true) != -1) {
-    throw AssertionError('ERR: contains `self` is not supported at the top-level of a language.  See documentation.');
+  if (language.contains != null &&
+      language.contains!.indexWhere((element) => element.self == true) != -1) {
+    throw AssertionError(
+      'ERR: contains `self` is not supported at the top-level of a language.  See documentation.',
+    );
   }
 
   // we need a null object, which inherit will guarantee
   language.classNameAliases = Map.of(language.classNameAliases ?? {});
 
   return compileMode(language);
-
 }
 
 /// Determines if a mode has a dependency on it's parent or not
@@ -187,9 +186,13 @@ bool dependencyOnParent(Mode? mode) {
 /// exploded into their own individual modes at compile time.
 List<Mode> _expandOrCloneMode(Mode mode) {
   if (mode.variants != null && mode.cachedVariants == null) {
-    mode.cachedVariants = mode.variants!.cast<Mode>().map((variant) {
-      return mode.copyWith(variant)..variants = null;
-    }).toList().cast<Mode>();
+    mode.cachedVariants = mode.variants!
+        .cast<Mode>()
+        .map((variant) {
+          return mode.copyWith(variant)..variants = null;
+        })
+        .toList()
+        .cast<Mode>();
   }
 
   // EXPAND
@@ -222,7 +225,6 @@ List<Mode> _expandOrCloneMode(Mode mode) {
 /// This is how we keep track of which mode matched, and what type of rule
 /// (`illegal`, `begin`, end, etc).
 class _MultiRegex {
-
   final Mode language;
   final Map<int, _RegexOption> matchIndexes;
   final List<List<dynamic>> regexes;
@@ -231,11 +233,11 @@ class _MultiRegex {
   int? lastIndex;
   _MatcherRe? matcherRe;
 
-  _MultiRegex(this.language) :
-    matchIndexes = {},
-    regexes = [],
-    matchAt = 1,
-    position = 0;
+  _MultiRegex(this.language)
+      : matchIndexes = {},
+        regexes = [],
+        matchAt = 1,
+        position = 0;
 
   // @ts-ignore
   void addRule(String re, _RegexOption opts) {
@@ -247,8 +249,15 @@ class _MultiRegex {
   }
 
   void compile() {
-    List<String> terminators = regexes.map((e) => e.last).cast<String>().toList();
-    matcherRe = _MatcherRe(_langRe(language, _rewriteBackreferences(terminators, joinWith: '|'), true));
+    List<String> terminators =
+        regexes.map((e) => e.last).cast<String>().toList();
+    matcherRe = _MatcherRe(
+      _langRe(
+        language,
+        _rewriteBackreferences(terminators, joinWith: '|'),
+        true,
+      ),
+    );
     lastIndex = 0;
   }
 
@@ -279,7 +288,7 @@ class _MultiRegex {
       end: match.end,
       rule: option.rule,
       type: option.type,
-      position: option.position
+      position: option.position,
     );
   }
 }
@@ -314,7 +323,6 @@ class _MultiRegex {
 ///
 /// MOST of the time the parser will be setting startAt manually to 0.
 class _ResumableMultiRegex {
-
   final Mode language;
   final Map<int, _MultiRegex> multiRegexes;
   final List<List<dynamic>> rules;
@@ -322,12 +330,12 @@ class _ResumableMultiRegex {
   int lastIndex;
   int regexIndex;
 
-  _ResumableMultiRegex(this.language) :
-    multiRegexes = {},
-    rules = [],
-    count = 0,
-    lastIndex = 0,
-    regexIndex = 0;
+  _ResumableMultiRegex(this.language)
+      : multiRegexes = {},
+        rules = [],
+        count = 0,
+        lastIndex = 0,
+        regexIndex = 0;
 
   _MultiRegex getMatcher(int index) {
     if (multiRegexes[index] != null) {
@@ -396,7 +404,8 @@ class _ResumableMultiRegex {
       if (result != null && result.index == lastIndex) {
         // result is position +0 and therefore a valid
         // "resume" match so result stays result
-      } else { // use the second matcher result
+      } else {
+        // use the second matcher result
         final _MultiRegex m2 = getMatcher(0);
         m2.lastIndex = lastIndex + 1;
         result = m2.exec(s);
@@ -412,20 +421,14 @@ class _ResumableMultiRegex {
     }
     return result;
   }
-
 }
 
 class _RegexOption {
-
   final Mode? rule;
   final String type;
   late int position;
 
-  _RegexOption({
-    this.rule,
-    required this.type
-  });
-
+  _RegexOption({this.rule, required this.type});
 }
 
 class EnhancedMatch extends _RegexOption {
@@ -454,7 +457,6 @@ class EnhancedMatch extends _RegexOption {
 }
 
 class _MatcherRe {
-
   RegExp regex;
   int? lastIndex;
 
@@ -463,5 +465,4 @@ class _MatcherRe {
   RegExpMatch? exec(String input) {
     return regex.allMatches(input, lastIndex ?? 0).firstOrNull;
   }
-
 }

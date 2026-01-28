@@ -3,8 +3,10 @@
 import 'package:flutter/painting.dart';
 
 const stackoverflowDarkTheme = {
-  'root':
-      TextStyle(color: Color(0xffffffff), backgroundColor: Color(0xff1c1b1b)),
+  'root': TextStyle(
+    color: Color(0xffffffff),
+    backgroundColor: Color(0xff1c1b1b),
+  ),
   'subst': TextStyle(color: Color(0xffffffff)),
   'comment': TextStyle(color: Color(0xff999999)),
   'keyword': TextStyle(color: Color(0xff88aece)),

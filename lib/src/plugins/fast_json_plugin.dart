@@ -1,7 +1,6 @@
 part of re_highlight;
 
 class FastJsonPlugin implements HLPlugin {
-
   const FastJsonPlugin();
 
   @override
@@ -17,8 +16,7 @@ class FastJsonPlugin implements HLPlugin {
   }
 
   @override
-  void afterHighlight(HighlightResult result) {
-  }
+  void afterHighlight(HighlightResult result) {}
 
   HighlightResult? _highlightJson(String code) {
     final _TokenTree tokenTree = _TokenTreeEmitter();
@@ -36,11 +34,9 @@ class FastJsonPlugin implements HLPlugin {
       emitter: tokenTree,
     );
   }
-
 }
 
 class _JsonParser {
-
   final String _code;
   final _TokenTree _tokenTree;
   int _pos = 0;
@@ -86,7 +82,9 @@ class _JsonParser {
     } else if (char == 'n') {
       _parseLiteral('null');
     } else {
-      throw FormatException('Invalid character ${_code[_pos]} at position $_pos');
+      throw FormatException(
+        'Invalid character ${_code[_pos]} at position $_pos',
+      );
     }
   }
 

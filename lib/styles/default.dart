@@ -3,8 +3,10 @@
 import 'package:flutter/painting.dart';
 
 const defaultTheme = {
-  'root':
-      TextStyle(backgroundColor: Color(0xffF3F3F3), color: Color(0xff444444)),
+  'root': TextStyle(
+    backgroundColor: Color(0xffF3F3F3),
+    color: Color(0xff444444),
+  ),
   'comment': TextStyle(color: Color(0xff697070)),
   'tag': TextStyle(color: Color(0xff444a)),
   'punctuation': TextStyle(color: Color(0xff444a)),

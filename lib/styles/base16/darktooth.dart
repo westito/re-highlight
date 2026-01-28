@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const darktoothTheme = {
-  'root':
-      TextStyle(color: Color(0xffA89984), backgroundColor: Color(0xff1D2021)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff504945), color: Color(0xffA89984)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff504945), color: Color(0xffA89984)),
+  'root': TextStyle(
+    color: Color(0xffA89984),
+    backgroundColor: Color(0xff1D2021),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff504945),
+    color: Color(0xffA89984),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff504945),
+    color: Color(0xffA89984),
+  ),
   'comment': TextStyle(color: Color(0xff665C54)),
   'tag': TextStyle(color: Color(0xff928374)),
   'subst': TextStyle(color: Color(0xffA89984)),
@@ -50,7 +56,9 @@ const darktoothTheme = {
   'keyword': TextStyle(color: Color(0xff8F4673)),
   'emphasis': TextStyle(color: Color(0xff8F4673), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffA87322)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffA87322), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffA87322),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffA87322)),
 };

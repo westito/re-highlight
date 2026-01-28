@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const vulcanTheme = {
-  'root':
-      TextStyle(color: Color(0xff5b778c), backgroundColor: Color(0xff041523)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff003552), color: Color(0xff5b778c)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff003552), color: Color(0xff5b778c)),
+  'root': TextStyle(
+    color: Color(0xff5b778c),
+    backgroundColor: Color(0xff041523),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff003552),
+    color: Color(0xff5b778c),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff003552),
+    color: Color(0xff5b778c),
+  ),
   'comment': TextStyle(color: Color(0xff7a5759)),
   'tag': TextStyle(color: Color(0xff6b6977)),
   'subst': TextStyle(color: Color(0xff5b778c)),
@@ -50,7 +56,9 @@ const vulcanTheme = {
   'keyword': TextStyle(color: Color(0xff9198a3)),
   'emphasis': TextStyle(color: Color(0xff9198a3), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xff977d7c)),
-  'meta-keyword':
-      TextStyle(color: Color(0xff977d7c), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xff977d7c),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xff977d7c)),
 };

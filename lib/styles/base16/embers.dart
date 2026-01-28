@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const embersTheme = {
-  'root':
-      TextStyle(color: Color(0xffA39A90), backgroundColor: Color(0xff16130F)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff433B32), color: Color(0xffA39A90)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff433B32), color: Color(0xffA39A90)),
+  'root': TextStyle(
+    color: Color(0xffA39A90),
+    backgroundColor: Color(0xff16130F),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff433B32),
+    color: Color(0xffA39A90),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff433B32),
+    color: Color(0xffA39A90),
+  ),
   'comment': TextStyle(color: Color(0xff5A5047)),
   'tag': TextStyle(color: Color(0xff8A8075)),
   'subst': TextStyle(color: Color(0xffA39A90)),
@@ -50,7 +56,9 @@ const embersTheme = {
   'keyword': TextStyle(color: Color(0xff82576D)),
   'emphasis': TextStyle(color: Color(0xff82576D), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xff825757)),
-  'meta-keyword':
-      TextStyle(color: Color(0xff825757), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xff825757),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xff825757)),
 };

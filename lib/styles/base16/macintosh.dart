@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const macintoshTheme = {
-  'root':
-      TextStyle(color: Color(0xffc0c0c0), backgroundColor: Color(0xff000000)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff404040), color: Color(0xffc0c0c0)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff404040), color: Color(0xffc0c0c0)),
+  'root': TextStyle(
+    color: Color(0xffc0c0c0),
+    backgroundColor: Color(0xff000000),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff404040),
+    color: Color(0xffc0c0c0),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff404040),
+    color: Color(0xffc0c0c0),
+  ),
   'comment': TextStyle(color: Color(0xff808080)),
   'tag': TextStyle(color: Color(0xff808080)),
   'subst': TextStyle(color: Color(0xffc0c0c0)),
@@ -50,7 +56,9 @@ const macintoshTheme = {
   'keyword': TextStyle(color: Color(0xff4700a5)),
   'emphasis': TextStyle(color: Color(0xff4700a5), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xff90713a)),
-  'meta-keyword':
-      TextStyle(color: Color(0xff90713a), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xff90713a),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xff90713a)),
 };

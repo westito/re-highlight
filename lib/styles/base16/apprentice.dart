@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const apprenticeTheme = {
-  'root':
-      TextStyle(color: Color(0xffBCBCBC), backgroundColor: Color(0xff262626)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff333333), color: Color(0xffBCBCBC)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff333333), color: Color(0xffBCBCBC)),
+  'root': TextStyle(
+    color: Color(0xffBCBCBC),
+    backgroundColor: Color(0xff262626),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff333333),
+    color: Color(0xffBCBCBC),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff333333),
+    color: Color(0xffBCBCBC),
+  ),
   'comment': TextStyle(color: Color(0xff6C6C6C)),
   'tag': TextStyle(color: Color(0xff787878)),
   'subst': TextStyle(color: Color(0xffBCBCBC)),
@@ -50,7 +56,9 @@ const apprenticeTheme = {
   'keyword': TextStyle(color: Color(0xff87AFD7)),
   'emphasis': TextStyle(color: Color(0xff87AFD7), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xff5F87AF)),
-  'meta-keyword':
-      TextStyle(color: Color(0xff5F87AF), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xff5F87AF),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xff5F87AF)),
 };

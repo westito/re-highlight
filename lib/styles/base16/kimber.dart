@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const kimberTheme = {
-  'root':
-      TextStyle(color: Color(0xffDEDEE7), backgroundColor: Color(0xff222222)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff555D55), color: Color(0xffDEDEE7)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff555D55), color: Color(0xffDEDEE7)),
+  'root': TextStyle(
+    color: Color(0xffDEDEE7),
+    backgroundColor: Color(0xff222222),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff555D55),
+    color: Color(0xffDEDEE7),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff555D55),
+    color: Color(0xffDEDEE7),
+  ),
   'comment': TextStyle(color: Color(0xff644646)),
   'tag': TextStyle(color: Color(0xff5A5A5A)),
   'subst': TextStyle(color: Color(0xffDEDEE7)),
@@ -50,7 +56,9 @@ const kimberTheme = {
   'keyword': TextStyle(color: Color(0xff86CACD)),
   'emphasis': TextStyle(color: Color(0xff86CACD), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xff704F4F)),
-  'meta-keyword':
-      TextStyle(color: Color(0xff704F4F), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xff704F4F),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xff704F4F)),
 };

@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const atelierSeasideLightTheme = {
-  'root':
-      TextStyle(color: Color(0xff5e6e5e), backgroundColor: Color(0xfff4fbf4)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff8ca68c), color: Color(0xff5e6e5e)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff8ca68c), color: Color(0xff5e6e5e)),
+  'root': TextStyle(
+    color: Color(0xff5e6e5e),
+    backgroundColor: Color(0xfff4fbf4),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff8ca68c),
+    color: Color(0xff5e6e5e),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff8ca68c),
+    color: Color(0xff5e6e5e),
+  ),
   'comment': TextStyle(color: Color(0xff809980)),
   'tag': TextStyle(color: Color(0xff687d68)),
   'subst': TextStyle(color: Color(0xff5e6e5e)),
@@ -50,7 +56,9 @@ const atelierSeasideLightTheme = {
   'keyword': TextStyle(color: Color(0xffad2bee)),
   'emphasis': TextStyle(color: Color(0xffad2bee), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffe619c3)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffe619c3), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffe619c3),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffe619c3)),
 };

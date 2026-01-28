@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const popTheme = {
-  'root':
-      TextStyle(color: Color(0xffd0d0d0), backgroundColor: Color(0xff000000)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff303030), color: Color(0xffd0d0d0)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff303030), color: Color(0xffd0d0d0)),
+  'root': TextStyle(
+    color: Color(0xffd0d0d0),
+    backgroundColor: Color(0xff000000),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff303030),
+    color: Color(0xffd0d0d0),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff303030),
+    color: Color(0xffd0d0d0),
+  ),
   'comment': TextStyle(color: Color(0xff505050)),
   'tag': TextStyle(color: Color(0xffb0b0b0)),
   'subst': TextStyle(color: Color(0xffd0d0d0)),
@@ -50,7 +56,9 @@ const popTheme = {
   'keyword': TextStyle(color: Color(0xffb31e8d)),
   'emphasis': TextStyle(color: Color(0xffb31e8d), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xff7a2d00)),
-  'meta-keyword':
-      TextStyle(color: Color(0xff7a2d00), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xff7a2d00),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xff7a2d00)),
 };

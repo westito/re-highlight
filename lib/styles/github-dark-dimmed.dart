@@ -3,8 +3,10 @@
 import 'package:flutter/painting.dart';
 
 const githubDarkDimmedTheme = {
-  'root':
-      TextStyle(color: Color(0xffadbac7), backgroundColor: Color(0xff22272e)),
+  'root': TextStyle(
+    color: Color(0xffadbac7),
+    backgroundColor: Color(0xff22272e),
+  ),
   'doctag': TextStyle(color: Color(0xfff47067)),
   'keyword': TextStyle(color: Color(0xfff47067)),
   'meta-keyword': TextStyle(color: Color(0xfff47067)),
@@ -43,8 +45,12 @@ const githubDarkDimmedTheme = {
   'bullet': TextStyle(color: Color(0xffeac55f)),
   'emphasis': TextStyle(color: Color(0xffadbac7), fontStyle: FontStyle.italic),
   'strong': TextStyle(color: Color(0xffadbac7), fontWeight: FontWeight.bold),
-  'addition':
-      TextStyle(color: Color(0xffb4f1b4), backgroundColor: Color(0xff1b4721)),
-  'deletion':
-      TextStyle(color: Color(0xffffd8d3), backgroundColor: Color(0xff78191b)),
+  'addition': TextStyle(
+    color: Color(0xffb4f1b4),
+    backgroundColor: Color(0xff1b4721),
+  ),
+  'deletion': TextStyle(
+    color: Color(0xffffd8d3),
+    backgroundColor: Color(0xff78191b),
+  ),
 };

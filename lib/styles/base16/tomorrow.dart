@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const tomorrowTheme = {
-  'root':
-      TextStyle(color: Color(0xff4d4d4c), backgroundColor: Color(0xffffffff)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xffd6d6d6), color: Color(0xff4d4d4c)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xffd6d6d6), color: Color(0xff4d4d4c)),
+  'root': TextStyle(
+    color: Color(0xff4d4d4c),
+    backgroundColor: Color(0xffffffff),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xffd6d6d6),
+    color: Color(0xff4d4d4c),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xffd6d6d6),
+    color: Color(0xff4d4d4c),
+  ),
   'comment': TextStyle(color: Color(0xff8e908c)),
   'tag': TextStyle(color: Color(0xff969896)),
   'subst': TextStyle(color: Color(0xff4d4d4c)),
@@ -50,7 +56,9 @@ const tomorrowTheme = {
   'keyword': TextStyle(color: Color(0xff8959a8)),
   'emphasis': TextStyle(color: Color(0xff8959a8), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffa3685a)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffa3685a), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffa3685a),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffa3685a)),
 };

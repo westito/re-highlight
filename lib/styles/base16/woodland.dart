@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const woodlandTheme = {
-  'root':
-      TextStyle(color: Color(0xffcabcb1), backgroundColor: Color(0xff231e18)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff48413a), color: Color(0xffcabcb1)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff48413a), color: Color(0xffcabcb1)),
+  'root': TextStyle(
+    color: Color(0xffcabcb1),
+    backgroundColor: Color(0xff231e18),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff48413a),
+    color: Color(0xffcabcb1),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff48413a),
+    color: Color(0xffcabcb1),
+  ),
   'comment': TextStyle(color: Color(0xff9d8b70)),
   'tag': TextStyle(color: Color(0xffb4a490)),
   'subst': TextStyle(color: Color(0xffcabcb1)),
@@ -50,7 +56,9 @@ const woodlandTheme = {
   'keyword': TextStyle(color: Color(0xffbb90e2)),
   'emphasis': TextStyle(color: Color(0xffbb90e2), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffb49368)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffb49368), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffb49368),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffb49368)),
 };

@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const zenburnTheme = {
-  'root':
-      TextStyle(color: Color(0xffdcdccc), backgroundColor: Color(0xff383838)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff606060), color: Color(0xffdcdccc)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff606060), color: Color(0xffdcdccc)),
+  'root': TextStyle(
+    color: Color(0xffdcdccc),
+    backgroundColor: Color(0xff383838),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff606060),
+    color: Color(0xffdcdccc),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff606060),
+    color: Color(0xffdcdccc),
+  ),
   'comment': TextStyle(color: Color(0xff6f6f6f)),
   'tag': TextStyle(color: Color(0xff808080)),
   'subst': TextStyle(color: Color(0xffdcdccc)),
@@ -50,7 +56,9 @@ const zenburnTheme = {
   'keyword': TextStyle(color: Color(0xffdc8cc3)),
   'emphasis': TextStyle(color: Color(0xffdc8cc3), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xff000000)),
-  'meta-keyword':
-      TextStyle(color: Color(0xff000000), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xff000000),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xff000000)),
 };

@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const evaDimTheme = {
-  'root':
-      TextStyle(color: Color(0xff9fa2a6), backgroundColor: Color(0xff2a3b4d)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff4b6988), color: Color(0xff9fa2a6)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff4b6988), color: Color(0xff9fa2a6)),
+  'root': TextStyle(
+    color: Color(0xff9fa2a6),
+    backgroundColor: Color(0xff2a3b4d),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff4b6988),
+    color: Color(0xff9fa2a6),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff4b6988),
+    color: Color(0xff9fa2a6),
+  ),
   'comment': TextStyle(color: Color(0xff55799c)),
   'tag': TextStyle(color: Color(0xff7e90a3)),
   'subst': TextStyle(color: Color(0xff9fa2a6)),
@@ -50,7 +56,9 @@ const evaDimTheme = {
   'keyword': TextStyle(color: Color(0xff9c6cd3)),
   'emphasis': TextStyle(color: Color(0xff9c6cd3), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffbb64a9)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffbb64a9), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffbb64a9),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffbb64a9)),
 };

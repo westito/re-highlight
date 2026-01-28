@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const horizonDarkTheme = {
-  'root':
-      TextStyle(color: Color(0xffCBCED0), backgroundColor: Color(0xff1C1E26)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff2E303E), color: Color(0xffCBCED0)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff2E303E), color: Color(0xffCBCED0)),
+  'root': TextStyle(
+    color: Color(0xffCBCED0),
+    backgroundColor: Color(0xff1C1E26),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff2E303E),
+    color: Color(0xffCBCED0),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff2E303E),
+    color: Color(0xffCBCED0),
+  ),
   'comment': TextStyle(color: Color(0xff6F6F70)),
   'tag': TextStyle(color: Color(0xff9DA0A2)),
   'subst': TextStyle(color: Color(0xffCBCED0)),
@@ -50,7 +56,9 @@ const horizonDarkTheme = {
   'keyword': TextStyle(color: Color(0xffB072D1)),
   'emphasis': TextStyle(color: Color(0xffB072D1), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffE4A382)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffE4A382), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffE4A382),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffE4A382)),
 };

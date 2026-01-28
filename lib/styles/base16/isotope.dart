@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const isotopeTheme = {
-  'root':
-      TextStyle(color: Color(0xffd0d0d0), backgroundColor: Color(0xff000000)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff606060), color: Color(0xffd0d0d0)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff606060), color: Color(0xffd0d0d0)),
+  'root': TextStyle(
+    color: Color(0xffd0d0d0),
+    backgroundColor: Color(0xff000000),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff606060),
+    color: Color(0xffd0d0d0),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff606060),
+    color: Color(0xffd0d0d0),
+  ),
   'comment': TextStyle(color: Color(0xff808080)),
   'tag': TextStyle(color: Color(0xffc0c0c0)),
   'subst': TextStyle(color: Color(0xffd0d0d0)),
@@ -50,7 +56,9 @@ const isotopeTheme = {
   'keyword': TextStyle(color: Color(0xffcc00ff)),
   'emphasis': TextStyle(color: Color(0xffcc00ff), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xff3300ff)),
-  'meta-keyword':
-      TextStyle(color: Color(0xff3300ff), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xff3300ff),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xff3300ff)),
 };

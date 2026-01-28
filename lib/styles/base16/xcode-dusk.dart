@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const xcodeDuskTheme = {
-  'root':
-      TextStyle(color: Color(0xff939599), backgroundColor: Color(0xff282B35)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff53555D), color: Color(0xff939599)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff53555D), color: Color(0xff939599)),
+  'root': TextStyle(
+    color: Color(0xff939599),
+    backgroundColor: Color(0xff282B35),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff53555D),
+    color: Color(0xff939599),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff53555D),
+    color: Color(0xff939599),
+  ),
   'comment': TextStyle(color: Color(0xff686A71)),
   'tag': TextStyle(color: Color(0xff7E8086)),
   'subst': TextStyle(color: Color(0xff939599)),
@@ -50,7 +56,9 @@ const xcodeDuskTheme = {
   'keyword': TextStyle(color: Color(0xffB21889)),
   'emphasis': TextStyle(color: Color(0xffB21889), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffC77C48)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffC77C48), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffC77C48),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffC77C48)),
 };

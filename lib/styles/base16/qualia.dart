@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const qualiaTheme = {
-  'root':
-      TextStyle(color: Color(0xffC0C0C0), backgroundColor: Color(0xff101010)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff454545), color: Color(0xffC0C0C0)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff454545), color: Color(0xffC0C0C0)),
+  'root': TextStyle(
+    color: Color(0xffC0C0C0),
+    backgroundColor: Color(0xff101010),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff454545),
+    color: Color(0xffC0C0C0),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff454545),
+    color: Color(0xffC0C0C0),
+  ),
   'comment': TextStyle(color: Color(0xff454545)),
   'tag': TextStyle(color: Color(0xff808080)),
   'subst': TextStyle(color: Color(0xffC0C0C0)),
@@ -50,7 +56,9 @@ const qualiaTheme = {
   'keyword': TextStyle(color: Color(0xffE0AF85)),
   'emphasis': TextStyle(color: Color(0xffE0AF85), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xff808080)),
-  'meta-keyword':
-      TextStyle(color: Color(0xff808080), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xff808080),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xff808080)),
 };

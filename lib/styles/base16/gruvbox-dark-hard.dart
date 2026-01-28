@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const gruvboxDarkHardTheme = {
-  'root':
-      TextStyle(color: Color(0xffd5c4a1), backgroundColor: Color(0xff1d2021)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff504945), color: Color(0xffd5c4a1)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff504945), color: Color(0xffd5c4a1)),
+  'root': TextStyle(
+    color: Color(0xffd5c4a1),
+    backgroundColor: Color(0xff1d2021),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff504945),
+    color: Color(0xffd5c4a1),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff504945),
+    color: Color(0xffd5c4a1),
+  ),
   'comment': TextStyle(color: Color(0xff665c54)),
   'tag': TextStyle(color: Color(0xffbdae93)),
   'subst': TextStyle(color: Color(0xffd5c4a1)),
@@ -50,7 +56,9 @@ const gruvboxDarkHardTheme = {
   'keyword': TextStyle(color: Color(0xffd3869b)),
   'emphasis': TextStyle(color: Color(0xffd3869b), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffd65d0e)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffd65d0e), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffd65d0e),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffd65d0e)),
 };

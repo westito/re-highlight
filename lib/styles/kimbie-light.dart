@@ -3,8 +3,10 @@
 import 'package:flutter/painting.dart';
 
 const kimbieLightTheme = {
-  'root':
-      TextStyle(backgroundColor: Color(0xfffbebd4), color: Color(0xff84613d)),
+  'root': TextStyle(
+    backgroundColor: Color(0xfffbebd4),
+    color: Color(0xff84613d),
+  ),
   'comment': TextStyle(color: Color(0xffa57a4c)),
   'quote': TextStyle(color: Color(0xffa57a4c)),
   'variable': TextStyle(color: Color(0xffdc3958)),

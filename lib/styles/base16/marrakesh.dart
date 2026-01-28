@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const marrakeshTheme = {
-  'root':
-      TextStyle(color: Color(0xff948e48), backgroundColor: Color(0xff201602)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff5f5b17), color: Color(0xff948e48)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff5f5b17), color: Color(0xff948e48)),
+  'root': TextStyle(
+    color: Color(0xff948e48),
+    backgroundColor: Color(0xff201602),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff5f5b17),
+    color: Color(0xff948e48),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff5f5b17),
+    color: Color(0xff948e48),
+  ),
   'comment': TextStyle(color: Color(0xff6c6823)),
   'tag': TextStyle(color: Color(0xff86813b)),
   'subst': TextStyle(color: Color(0xff948e48)),
@@ -50,7 +56,9 @@ const marrakeshTheme = {
   'keyword': TextStyle(color: Color(0xff8868b3)),
   'emphasis': TextStyle(color: Color(0xff8868b3), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffb3588e)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffb3588e), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffb3588e),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffb3588e)),
 };

@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const silkDarkTheme = {
-  'root':
-      TextStyle(color: Color(0xffC7DBDD), backgroundColor: Color(0xff0e3c46)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff2A5054), color: Color(0xffC7DBDD)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff2A5054), color: Color(0xffC7DBDD)),
+  'root': TextStyle(
+    color: Color(0xffC7DBDD),
+    backgroundColor: Color(0xff0e3c46),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff2A5054),
+    color: Color(0xffC7DBDD),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff2A5054),
+    color: Color(0xffC7DBDD),
+  ),
   'comment': TextStyle(color: Color(0xff587073)),
   'tag': TextStyle(color: Color(0xff9DC8CD)),
   'subst': TextStyle(color: Color(0xffC7DBDD)),
@@ -50,7 +56,9 @@ const silkDarkTheme = {
   'keyword': TextStyle(color: Color(0xff756b8a)),
   'emphasis': TextStyle(color: Color(0xff756b8a), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xff9b647b)),
-  'meta-keyword':
-      TextStyle(color: Color(0xff9b647b), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xff9b647b),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xff9b647b)),
 };

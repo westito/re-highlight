@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const rosPineDawnTheme = {
-  'root':
-      TextStyle(color: Color(0xff575279), backgroundColor: Color(0xfffaf4ed)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xfff2e9de), color: Color(0xff575279)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xfff2e9de), color: Color(0xff575279)),
+  'root': TextStyle(
+    color: Color(0xff575279),
+    backgroundColor: Color(0xfffaf4ed),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xfff2e9de),
+    color: Color(0xff575279),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xfff2e9de),
+    color: Color(0xff575279),
+  ),
   'comment': TextStyle(color: Color(0xff9893a5)),
   'tag': TextStyle(color: Color(0xff6e6a86)),
   'subst': TextStyle(color: Color(0xff575279)),
@@ -50,7 +56,9 @@ const rosPineDawnTheme = {
   'keyword': TextStyle(color: Color(0xff907aa9)),
   'emphasis': TextStyle(color: Color(0xff907aa9), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffc5c3ce)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffc5c3ce), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffc5c3ce),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffc5c3ce)),
 };

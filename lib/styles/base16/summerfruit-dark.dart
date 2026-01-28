@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const summerfruitDarkTheme = {
-  'root':
-      TextStyle(color: Color(0xffD0D0D0), backgroundColor: Color(0xff151515)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff303030), color: Color(0xffD0D0D0)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff303030), color: Color(0xffD0D0D0)),
+  'root': TextStyle(
+    color: Color(0xffD0D0D0),
+    backgroundColor: Color(0xff151515),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff303030),
+    color: Color(0xffD0D0D0),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff303030),
+    color: Color(0xffD0D0D0),
+  ),
   'comment': TextStyle(color: Color(0xff505050)),
   'tag': TextStyle(color: Color(0xffB0B0B0)),
   'subst': TextStyle(color: Color(0xffD0D0D0)),
@@ -50,7 +56,9 @@ const summerfruitDarkTheme = {
   'keyword': TextStyle(color: Color(0xffAD00A1)),
   'emphasis': TextStyle(color: Color(0xffAD00A1), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffCC6633)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffCC6633), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffCC6633),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffCC6633)),
 };

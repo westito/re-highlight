@@ -3,12 +3,18 @@
 import 'package:flutter/painting.dart';
 
 const codeschoolTheme = {
-  'root':
-      TextStyle(color: Color(0xff9ea7a6), backgroundColor: Color(0xff232c31)),
-  '.hljs::selection':
-      TextStyle(backgroundColor: Color(0xff2a343a), color: Color(0xff9ea7a6)),
-  '.hljs-::selection':
-      TextStyle(backgroundColor: Color(0xff2a343a), color: Color(0xff9ea7a6)),
+  'root': TextStyle(
+    color: Color(0xff9ea7a6),
+    backgroundColor: Color(0xff232c31),
+  ),
+  '.hljs::selection': TextStyle(
+    backgroundColor: Color(0xff2a343a),
+    color: Color(0xff9ea7a6),
+  ),
+  '.hljs-::selection': TextStyle(
+    backgroundColor: Color(0xff2a343a),
+    color: Color(0xff9ea7a6),
+  ),
   'comment': TextStyle(color: Color(0xff3f4944)),
   'tag': TextStyle(color: Color(0xff84898c)),
   'subst': TextStyle(color: Color(0xff9ea7a6)),
@@ -50,7 +56,9 @@ const codeschoolTheme = {
   'keyword': TextStyle(color: Color(0xffc59820)),
   'emphasis': TextStyle(color: Color(0xffc59820), fontStyle: FontStyle.italic),
   'meta': TextStyle(color: Color(0xffc98344)),
-  'meta-keyword':
-      TextStyle(color: Color(0xffc98344), fontWeight: FontWeight.bold),
+  'meta-keyword': TextStyle(
+    color: Color(0xffc98344),
+    fontWeight: FontWeight.bold,
+  ),
   'meta-string': TextStyle(color: Color(0xffc98344)),
 };
