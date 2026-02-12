@@ -30,11 +30,12 @@ void main() {
               (element) => element.statSync().type == FileSystemEntityType.file,
             )
             .forEach((path) {
-          final String content = File(path.path).readAsStringSync();
-          final String? detectedLanguage =
-              highlight.highlightAuto(content).language;
-          expect(detectedLanguage, language);
-        });
+              final String content = File(path.path).readAsStringSync();
+              final String? detectedLanguage = highlight
+                  .highlightAuto(content)
+                  .language;
+              expect(detectedLanguage, language);
+            });
       });
     });
   });

@@ -18,8 +18,8 @@ void main() {
               element.statSync().type == FileSystemEntityType.directory,
         )
         .forEach((element) {
-      testLanguage(highlight, basename(element.path), element.path);
-    });
+          testLanguage(highlight, basename(element.path), element.path);
+        });
   });
 }
 
@@ -35,11 +35,11 @@ void testLanguage(Highlight highlight, String language, String testDir) {
               element.path.endsWith('.expect.txt'),
         )
         .forEach((element) {
-      expectedFileNames.add(basename(element.path));
-      sourceFileNames.add(
-        basename(element.path.replaceAll('.expect.txt', '.txt')),
-      );
-    });
+          expectedFileNames.add(basename(element.path));
+          sourceFileNames.add(
+            basename(element.path.replaceAll('.expect.txt', '.txt')),
+          );
+        });
     for (int i = 0; i < sourceFileNames.length; i++) {
       final String testName = sourceFileNames[i];
       test('should markup $testName', () {
@@ -49,8 +49,9 @@ void testLanguage(Highlight highlight, String language, String testDir) {
         final String expectedFile = File(
           join(testDir, expectedFileNames[i]),
         ).readAsStringSync();
-        final String actual =
-            highlight.highlight(code: sourceFile, language: language).toHtml();
+        final String actual = highlight
+            .highlight(code: sourceFile, language: language)
+            .toHtml();
         expect(actual.trim(), expectedFile.trim());
       });
     }

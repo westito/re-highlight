@@ -89,26 +89,26 @@ final langKotlin = Mode(
     ),
     '~contains~6~contains~0~contains~0~variants~0~contains~1~contains~1~variants~1':
         Mode(
-      begin: "'",
-      end: "'",
-      illegal: "\\n",
-      contains: <Mode>[BACKSLASH_ESCAPE],
-    ),
+          begin: "'",
+          end: "'",
+          illegal: "\\n",
+          contains: <Mode>[BACKSLASH_ESCAPE],
+        ),
     '~contains~6~contains~0~contains~0~variants~0~contains~1~contains~1~variants~2':
         Mode(
-      begin: "\"",
-      end: "\"",
-      illegal: "\\n",
-      contains: <Mode>[
-        BACKSLASH_ESCAPE,
-        Mode(
-          ref: '~contains~6~contains~0~contains~0~variants~0~contains~0',
+          begin: "\"",
+          end: "\"",
+          illegal: "\\n",
+          contains: <Mode>[
+            BACKSLASH_ESCAPE,
+            Mode(
+              ref: '~contains~6~contains~0~contains~0~variants~0~contains~0',
+            ),
+            Mode(
+              ref: '~contains~6~contains~0~contains~0~variants~0~contains~1',
+            ),
+          ],
         ),
-        Mode(
-          ref: '~contains~6~contains~0~contains~0~variants~0~contains~1',
-        ),
-      ],
-    ),
     '~contains~7~contains~2~contains~0~contains~0': Mode(
       variants: <Mode>[
         Mode(className: 'type', begin: "[a-zA-Z_]\\w*"),

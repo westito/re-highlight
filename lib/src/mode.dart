@@ -1,7 +1,7 @@
 part of re_highlight;
 
-typedef ModeCallback = void Function(
-    EnhancedMatch match, ModeCallbackResponse response);
+typedef ModeCallback =
+    void Function(EnhancedMatch match, ModeCallbackResponse response);
 
 class Mode {
   String? ref;

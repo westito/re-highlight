@@ -1693,26 +1693,25 @@ final langRuby = Mode(
         Mode(begin: "#<", end: ">"),
     '~contains~1~starts~contains~0~contains~1~contains~6~contains~0~contains~13~contains~2':
         Mode(
-      scope: 'comment',
-      begin: "#",
-      end: "\$",
-      contains: <Mode>[
-        Mode(className: 'doctag', begin: "@[A-Za-z]+"),
-        Mode(
-          scope: 'doctag',
-          begin: "[ ]*(?=(TODO|FIXME|NOTE|BUG|OPTIMIZE|HACK|XXX):)",
-          end: "(TODO|FIXME|NOTE|BUG|OPTIMIZE|HACK|XXX):",
-          excludeBegin: true,
-          relevance: 0,
+          scope: 'comment',
+          begin: "#",
+          end: "\$",
+          contains: <Mode>[
+            Mode(className: 'doctag', begin: "@[A-Za-z]+"),
+            Mode(
+              scope: 'doctag',
+              begin: "[ ]*(?=(TODO|FIXME|NOTE|BUG|OPTIMIZE|HACK|XXX):)",
+              end: "(TODO|FIXME|NOTE|BUG|OPTIMIZE|HACK|XXX):",
+              excludeBegin: true,
+              relevance: 0,
+            ),
+            Mode(
+              begin:
+                  "[ ]+((?:I|a|is|so|us|to|at|if|in|it|on|[A-Za-z]+['](d|ve|re|ll|t|s|n)|[A-Za-z]+[-][a-z]+|[A-Za-z][a-z]{2,})[.]?[:]?([.][ ]|[ ])){3}",
+            ),
+          ],
         ),
-        Mode(
-          begin:
-              "[ ]+((?:I|a|is|so|us|to|at|if|in|it|on|[A-Za-z]+['](d|ve|re|ll|t|s|n)|[A-Za-z]+[-][a-z]+|[A-Za-z][a-z]{2,})[.]?[:]?([.][ ]|[ ])){3}",
-        ),
-      ],
-    ),
-    '~contains~1~starts~contains~0~contains~1~contains~6~contains~0~contains~13~contains~3':
-        Mode(
+    '~contains~1~starts~contains~0~contains~1~contains~6~contains~0~contains~13~contains~3': Mode(
       scope: 'comment',
       begin: "^=begin",
       end: "^=end",
@@ -1737,134 +1736,134 @@ final langRuby = Mode(
     ),
     '~contains~1~starts~contains~0~contains~1~contains~6~contains~0~contains~13~contains~4':
         Mode(
-      scope: 'comment',
-      begin: "^__END__",
-      end: "\\b\\B",
-      contains: <Mode>[
-        Mode(
-          scope: 'doctag',
-          begin: "[ ]*(?=(TODO|FIXME|NOTE|BUG|OPTIMIZE|HACK|XXX):)",
-          end: "(TODO|FIXME|NOTE|BUG|OPTIMIZE|HACK|XXX):",
-          excludeBegin: true,
-          relevance: 0,
+          scope: 'comment',
+          begin: "^__END__",
+          end: "\\b\\B",
+          contains: <Mode>[
+            Mode(
+              scope: 'doctag',
+              begin: "[ ]*(?=(TODO|FIXME|NOTE|BUG|OPTIMIZE|HACK|XXX):)",
+              end: "(TODO|FIXME|NOTE|BUG|OPTIMIZE|HACK|XXX):",
+              excludeBegin: true,
+              relevance: 0,
+            ),
+            Mode(
+              begin:
+                  "[ ]+((?:I|a|is|so|us|to|at|if|in|it|on|[A-Za-z]+['](d|ve|re|ll|t|s|n)|[A-Za-z]+[-][a-z]+|[A-Za-z][a-z]{2,})[.]?[:]?([.][ ]|[ ])){3}",
+            ),
+          ],
         ),
-        Mode(
-          begin:
-              "[ ]+((?:I|a|is|so|us|to|at|if|in|it|on|[A-Za-z]+['](d|ve|re|ll|t|s|n)|[A-Za-z]+[-][a-z]+|[A-Za-z][a-z]{2,})[.]?[:]?([.][ ]|[ ])){3}",
-        ),
-      ],
-    ),
     '~contains~1~starts~contains~0~contains~1~contains~6~contains~0~contains~7':
         Mode(begin: "[a-zA-Z]\\w*::"),
     '~contains~1~starts~contains~0~contains~1~contains~6~contains~0~contains~8':
         Mode(
-      className: 'symbol',
-      begin: "[a-zA-Z_]\\w*(!|\\?)?:",
-      relevance: 0,
-    ),
+          className: 'symbol',
+          begin: "[a-zA-Z_]\\w*(!|\\?)?:",
+          relevance: 0,
+        ),
     '~contains~1~starts~contains~0~contains~1~contains~6~contains~0~contains~9':
         Mode(
-      className: 'symbol',
-      begin: ":(?!\\s)",
-      contains: <Mode>[
-        Mode(ref: '~contains~1~starts~contains~0'),
-        Mode(
-          begin:
-              "([a-zA-Z_]\\w*[!?=]?|[-+~]@|<<|>>|=~|===?|<=>|[<>]=?|\\*\\*|[-/+%^&*~`|]|\\[\\]=?)",
+          className: 'symbol',
+          begin: ":(?!\\s)",
+          contains: <Mode>[
+            Mode(ref: '~contains~1~starts~contains~0'),
+            Mode(
+              begin:
+                  "([a-zA-Z_]\\w*[!?=]?|[-+~]@|<<|>>|=~|===?|<=>|[<>]=?|\\*\\*|[-/+%^&*~`|]|\\[\\]=?)",
+            ),
+          ],
+          relevance: 0,
         ),
-      ],
-      relevance: 0,
-    ),
     '~contains~1~starts~contains~0~contains~1~contains~6~contains~0~contains~10':
         Mode(
-      className: 'number',
-      relevance: 0,
-      variants: <Mode>[
-        Mode(
-          begin:
-              "\\b([1-9](_?[0-9])*|0)(\\.([0-9](_?[0-9])*))?([eE][+-]?([0-9](_?[0-9])*)|r)?i?\\b",
+          className: 'number',
+          relevance: 0,
+          variants: <Mode>[
+            Mode(
+              begin:
+                  "\\b([1-9](_?[0-9])*|0)(\\.([0-9](_?[0-9])*))?([eE][+-]?([0-9](_?[0-9])*)|r)?i?\\b",
+            ),
+            Mode(begin: "\\b0[dD][0-9](_?[0-9])*r?i?\\b"),
+            Mode(begin: "\\b0[bB][0-1](_?[0-1])*r?i?\\b"),
+            Mode(begin: "\\b0[oO][0-7](_?[0-7])*r?i?\\b"),
+            Mode(begin: "\\b0[xX][0-9a-fA-F](_?[0-9a-fA-F])*r?i?\\b"),
+            Mode(begin: "\\b0(_?[0-7])+r?i?\\b"),
+          ],
         ),
-        Mode(begin: "\\b0[dD][0-9](_?[0-9])*r?i?\\b"),
-        Mode(begin: "\\b0[bB][0-1](_?[0-1])*r?i?\\b"),
-        Mode(begin: "\\b0[oO][0-7](_?[0-7])*r?i?\\b"),
-        Mode(begin: "\\b0[xX][0-9a-fA-F](_?[0-9a-fA-F])*r?i?\\b"),
-        Mode(begin: "\\b0(_?[0-7])+r?i?\\b"),
-      ],
-    ),
     '~contains~1~starts~contains~0~contains~1~contains~6~contains~0~contains~11':
         Mode(
-      className: 'variable',
-      begin: "(\\\$\\W)|((\\\$|@@?)(\\w+))(?=[^@\$?])(?![A-Za-z])(?![@\$?'])",
-    ),
+          className: 'variable',
+          begin:
+              "(\\\$\\W)|((\\\$|@@?)(\\w+))(?=[^@\$?])(?![A-Za-z])(?![@\$?'])",
+        ),
     '~contains~1~starts~contains~0~contains~1~contains~6~contains~0~contains~12':
         Mode(
-      className: 'params',
-      begin: "\\|(?!=)",
-      end: "\\|",
-      excludeBegin: true,
-      excludeEnd: true,
-      relevance: 0,
-      keywords: {
-        "variable.constant": ["__FILE__", "__LINE__", "__ENCODING__"],
-        "variable.language": ["self", "super"],
-        "keyword": [
-          "alias",
-          "and",
-          "begin",
-          "BEGIN",
-          "break",
-          "case",
-          "class",
-          "defined",
-          "do",
-          "else",
-          "elsif",
-          "end",
-          "END",
-          "ensure",
-          "for",
-          "if",
-          "in",
-          "module",
-          "next",
-          "not",
-          "or",
-          "redo",
-          "require",
-          "rescue",
-          "retry",
-          "return",
-          "then",
-          "undef",
-          "unless",
-          "until",
-          "when",
-          "while",
-          "yield",
-          "include",
-          "extend",
-          "prepend",
-          "public",
-          "private",
-          "protected",
-          "raise",
-          "throw",
-        ],
-        "built_in": [
-          "proc",
-          "lambda",
-          "attr_accessor",
-          "attr_reader",
-          "attr_writer",
-          "define_method",
-          "private_constant",
-          "module_function",
-        ],
-        "literal": ["true", "false", "nil"],
-      },
-    ),
-    '~contains~1~starts~contains~0~contains~1~contains~6~contains~0~contains~13':
-        Mode(
+          className: 'params',
+          begin: "\\|(?!=)",
+          end: "\\|",
+          excludeBegin: true,
+          excludeEnd: true,
+          relevance: 0,
+          keywords: {
+            "variable.constant": ["__FILE__", "__LINE__", "__ENCODING__"],
+            "variable.language": ["self", "super"],
+            "keyword": [
+              "alias",
+              "and",
+              "begin",
+              "BEGIN",
+              "break",
+              "case",
+              "class",
+              "defined",
+              "do",
+              "else",
+              "elsif",
+              "end",
+              "END",
+              "ensure",
+              "for",
+              "if",
+              "in",
+              "module",
+              "next",
+              "not",
+              "or",
+              "redo",
+              "require",
+              "rescue",
+              "retry",
+              "return",
+              "then",
+              "undef",
+              "unless",
+              "until",
+              "when",
+              "while",
+              "yield",
+              "include",
+              "extend",
+              "prepend",
+              "public",
+              "private",
+              "protected",
+              "raise",
+              "throw",
+            ],
+            "built_in": [
+              "proc",
+              "lambda",
+              "attr_accessor",
+              "attr_reader",
+              "attr_writer",
+              "define_method",
+              "private_constant",
+              "module_function",
+            ],
+            "literal": ["true", "false", "nil"],
+          },
+        ),
+    '~contains~1~starts~contains~0~contains~1~contains~6~contains~0~contains~13': Mode(
       begin:
           "(!|!=|!==|%|%=|&|&&|&=|\\*|\\*=|\\+|\\+=|,|-|-=|/=|/|:|;|<<|<<=|<=|<|===|==|=|>>>=|>>=|>=|>>>|>>|>|\\?|\\[|\\{|\\(|\\^|\\^=|\\||\\|=|\\|\\||\x7e|unless)\\s*",
       keywords: "unless",

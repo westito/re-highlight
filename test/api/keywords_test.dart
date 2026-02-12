@@ -7,7 +7,8 @@ void main() {
   group('computing the relevance score of a language', () {
     test('should ignore common keywords', () {
       final Mode grammar = Mode(
-        keywords: 'farmer river weeds'
+        keywords:
+            'farmer river weeds'
             ' and of', // keywords that happen to also be common
       );
       const String code = "farmer and of river weeds";
@@ -20,7 +21,8 @@ void main() {
     });
     test('should not ignore weighted common keywords', () {
       final Mode grammar = Mode(
-        keywords: 'farmer river weeds'
+        keywords:
+            'farmer river weeds'
             ' and of|10', // keywords that happen to also be common
       );
       const String code = 'farmer and of river weeds';
@@ -33,7 +35,8 @@ void main() {
     });
     test('should not ignore weighted common keywords (if 1 is forced)', () {
       final Mode grammar = Mode(
-        keywords: 'farmer river weeds'
+        keywords:
+            'farmer river weeds'
             ' and of|1', // keywords that happen to also be common
       );
       const String code = 'farmer and of river weeds';

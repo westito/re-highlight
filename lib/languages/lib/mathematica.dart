@@ -6629,7 +6629,7 @@ const _SYSTEM_SYMBOLS = <String>[
 
 ModeCallback callbackOnBegin =
     (EnhancedMatch match, ModeCallbackResponse response) {
-  if (!_SYSTEM_SYMBOLS.contains(match[0])) {
-    response.ignoreMatch();
-  }
-};
+      if (!_SYSTEM_SYMBOLS.contains(match[0])) {
+        response.ignoreMatch();
+      }
+    };

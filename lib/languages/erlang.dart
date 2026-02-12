@@ -516,8 +516,7 @@ final langErlang = Mode(
         Mode(begin: "\\b_([A-Z][A-Za-z0-9_]*)?", relevance: 0),
     '~contains~0~contains~0~contains~2~contains~4~contains~1~contains~8~contains~10':
         Mode(begin: "[A-Z][a-zA-Z0-9_]*", relevance: 0),
-    '~contains~0~contains~0~contains~2~contains~4~contains~1~contains~8~contains~11':
-        Mode(
+    '~contains~0~contains~0~contains~2~contains~4~contains~1~contains~8~contains~11': Mode(
       begin: "#[a-zA-Z_]\\w*",
       relevance: 0,
       returnBegin: true,

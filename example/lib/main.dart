@@ -47,8 +47,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   onChanged: (value) {
                     setState(() {
                       _language = value;
-                      _controller.languages =
-                          value == null ? const [] : [value];
+                      _controller.languages = value == null
+                          ? const []
+                          : [value];
                     });
                   },
                 ),

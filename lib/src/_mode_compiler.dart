@@ -126,7 +126,8 @@ Mode _compileLanguage(Mode language) {
       }
       cmode.terminatorEnd = cmode.end ?? '';
       if (mode.endsWithParent == true && parent.terminatorEnd != null) {
-        cmode.terminatorEnd = cmode.terminatorEnd! +
+        cmode.terminatorEnd =
+            cmode.terminatorEnd! +
             (mode.end != null ? '|' : '') +
             parent.terminatorEnd!;
       }
@@ -234,10 +235,10 @@ class _MultiRegex {
   _MatcherRe? matcherRe;
 
   _MultiRegex(this.language)
-      : matchIndexes = {},
-        regexes = [],
-        matchAt = 1,
-        position = 0;
+    : matchIndexes = {},
+      regexes = [],
+      matchAt = 1,
+      position = 0;
 
   // @ts-ignore
   void addRule(String re, _RegexOption opts) {
@@ -249,8 +250,10 @@ class _MultiRegex {
   }
 
   void compile() {
-    List<String> terminators =
-        regexes.map((e) => e.last).cast<String>().toList();
+    List<String> terminators = regexes
+        .map((e) => e.last)
+        .cast<String>()
+        .toList();
     matcherRe = _MatcherRe(
       _langRe(
         language,
@@ -331,11 +334,11 @@ class _ResumableMultiRegex {
   int regexIndex;
 
   _ResumableMultiRegex(this.language)
-      : multiRegexes = {},
-        rules = [],
-        count = 0,
-        lastIndex = 0,
-        regexIndex = 0;
+    : multiRegexes = {},
+      rules = [],
+      count = 0,
+      lastIndex = 0,
+      regexIndex = 0;
 
   _MultiRegex getMatcher(int index) {
     if (multiRegexes[index] != null) {

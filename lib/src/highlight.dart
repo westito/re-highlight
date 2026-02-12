@@ -11,11 +11,7 @@ class Highlight {
   // even if a single syntax or parse hits a fatal error
   bool _safeMode;
 
-  Highlight()
-      : _plugins = [],
-        _languages = {},
-        _aliases = {},
-        _safeMode = true;
+  Highlight() : _plugins = [], _languages = {}, _aliases = {}, _safeMode = true;
 
   void debugMode() {
     _safeMode = false;
@@ -42,7 +38,8 @@ class Highlight {
 
     // a before plugin can usurp the result completely by providing it's own
     // in which case we don't even need to call highlight
-    final HighlightResult result = context.result ??
+    final HighlightResult result =
+        context.result ??
         _highlight(context.language, context.code, ignoreIllegals);
 
     result.code = context.code;
@@ -217,8 +214,9 @@ class Highlight {
       while (match != null) {
         buf += modeBuffer.substring(lastIndex, match.start);
         final String match0 = match[0]!;
-        final String word =
-            language.caseInsensitive == true ? match0.toLowerCase() : match0;
+        final String word = language.caseInsensitive == true
+            ? match0.toLowerCase()
+            : match0;
         final _KeywordData? data = keywordData(top, word);
         if (data != null) {
           final String kind = data.scopeName;
@@ -242,8 +240,9 @@ class Highlight {
           buf += match0;
         }
         lastIndex = match.end;
-        match =
-            top.keywordPatternRe!.allMatches(modeBuffer, lastIndex).firstOrNull;
+        match = top.keywordPatternRe!
+            .allMatches(modeBuffer, lastIndex)
+            .firstOrNull;
       }
       buf += modeBuffer.substring(lastIndex);
       emitter.addText(buf);
@@ -466,9 +465,11 @@ class Highlight {
 
     void processContinuations() {
       final List<String> list = [];
-      for (Mode? current = top;
-          current != language;
-          current = current?.parent) {
+      for (
+        Mode? current = top;
+        current != language;
+        current = current?.parent
+      ) {
         if (current?.scope?.isNotEmpty ?? false) {
           list.insert(0, current!.scope);
         }
@@ -673,9 +674,9 @@ class HighlightResult {
     IllegalData? illegalBy,
     required Emitter emitter,
     Mode? top,
-  })  : _illegalBy = illegalBy,
-        _emitter = emitter,
-        _top = top;
+  }) : _illegalBy = illegalBy,
+       _emitter = emitter,
+       _top = top;
 
   void render(HighlightRenderer renderer) {
     (_emitter as _TokenTree).walk(renderer);
@@ -694,16 +695,16 @@ class AutoHighlightResult extends HighlightResult {
   HighlightResult? secondBest;
 
   AutoHighlightResult({required HighlightResult best, this.secondBest})
-      : super(
-          code: best.code,
-          relevance: best.relevance,
-          language: best.language,
-          illegal: best.illegal,
-          errorRaised: best.errorRaised,
-          illegalBy: best._illegalBy,
-          emitter: best._emitter,
-          top: best._top,
-        );
+    : super(
+        code: best.code,
+        relevance: best.relevance,
+        language: best.language,
+        illegal: best.illegal,
+        errorRaised: best.errorRaised,
+        illegalBy: best._illegalBy,
+        emitter: best._emitter,
+        top: best._top,
+      );
 }
 
 class IllegalData {

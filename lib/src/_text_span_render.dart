@@ -6,9 +6,7 @@ class _TextSpanRenderer implements TextSpanRenderer {
   final List<_HighlighTextSpan> _stack;
   final List<TextSpan> _results;
 
-  _TextSpanRenderer(this._base, this._theme)
-      : _stack = [],
-        _results = [];
+  _TextSpanRenderer(this._base, this._theme) : _stack = [], _results = [];
 
   @override
   void addText(String text) {
